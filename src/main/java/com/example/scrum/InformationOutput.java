@@ -35,7 +35,7 @@ public class InformationOutput {
             System.out.println("File already exists");
         }
 
-        String text = timeDate + " " + parsedDate + " Schiff versenkt an pos 1\r\n";
+        String text = timeDate + " " + parsedDate + " Schiff versenggdt an pos 1\r\n";
         FileOutputStream fos = new FileOutputStream("logs.txt", true);
         fos.write(text.getBytes());
         // fos.flush();
@@ -43,6 +43,9 @@ public class InformationOutput {
     }
 
     public void whichPlayer() { // Welcher Spieler drann ist
+
+    }
+    public void PlayerCreated(String name){
 
     }
 

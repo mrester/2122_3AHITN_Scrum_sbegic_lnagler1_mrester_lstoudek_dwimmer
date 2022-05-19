@@ -17,6 +17,7 @@ public class HelloController {
     public Button confirm;
     Spieler s1 = new Spieler();
     Spieler s2 = new Spieler();
+    InformationOutput log;
 
 
     public void pressed(ActionEvent actionEvent) {
@@ -28,7 +29,7 @@ public class HelloController {
             SpAusgabe.setText(s1.getName());
             LaAusgabe.setText(s1.land.getName());
             count++;
-
+            log.PlayerCreated(name);
         }else if (count == 2){
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
@@ -37,6 +38,7 @@ public class HelloController {
             SpAusgabe.setText(s2.getName());
             LaAusgabe.setText(s2.land.getName());
             count++;
+            log.PlayerCreated(name);
 
         }
 
