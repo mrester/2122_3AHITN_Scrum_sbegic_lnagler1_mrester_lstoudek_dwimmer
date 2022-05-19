@@ -3,7 +3,7 @@
  *           Fachrichtung Informatik und Netzwerktechnik
  *----------------------------------------------------------------------------*/
 /**
- * Kurzbeschreibung
+ * Output des PlayFields
  *
  * @author : lnagler1
  * @date : 5.05. 2022
@@ -67,7 +67,12 @@ public class PlayFieldController {
     public GridPane ownPlayField;
     public GridPane enemyField;
 
-    // Spielfeld
+    /**
+     * Klasse: Spielfeld
+     * Methode: initialize
+     * jeder Zelle der GridPane wird eine Pane (Der Klasse MyPane) untergeordnet, damit man
+     * mit row und column auf jede einzelne Zelle zugreifen kann.
+     */
     public void initialize(){
         for (int i = 0; i < ownPlayField.getRowCount(); i++) {
             for (int j = 0; j < ownPlayField.getColumnCount(); j++) {
