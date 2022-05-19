@@ -2,27 +2,21 @@ package com.example.scrum;
 
 public class Spieler {
     String name;
-    //Land land;
+    Land land;
 
 
     public Spieler() {
     }
 
-    public Spieler(String name) {
+    public Spieler(String name, String land) {
         this.name = name;
-        //this.land = land;
+        this.land = new Land(land);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getName() {
         return name;
     }
 
-    /*public String getName() {
-        return name;
-    }*/
 
 }
