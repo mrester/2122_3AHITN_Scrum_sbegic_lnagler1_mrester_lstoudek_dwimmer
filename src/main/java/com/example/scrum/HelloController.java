@@ -6,6 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class HelloController {
     public TextField PlEingabe;
     public Label PlAusgabe;
@@ -23,5 +25,9 @@ public class HelloController {
         String name = PlEingabe.getText();
         s2.setName(name);
         PlAusgabe.setText(s2.getName());
+    }
+    public void initialize() throws IOException {
+        InformationOutput i = new InformationOutput();
+        i.fileManager();
     }
 }
