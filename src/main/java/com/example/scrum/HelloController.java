@@ -7,6 +7,8 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class HelloController {
     public static int count =1;
     @FXML
@@ -17,10 +19,14 @@ public class HelloController {
     public Button confirm;
     Spieler s1 = new Spieler();
     Spieler s2 = new Spieler();
-    InformationOutput log;
 
+    InformationOutput logs = new InformationOutput();
 
-    public void pressed(ActionEvent actionEvent) {
+    public void initialize() throws IOException {
+        logs.fileManager();
+    }
+
+    public void pressed(ActionEvent actionEvent) throws IOException {
         if (count == 1){
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
@@ -29,7 +35,7 @@ public class HelloController {
             SpAusgabe.setText(s1.getName());
             LaAusgabe.setText(s1.land.getName());
             count++;
-            log.PlayerCreated(name);
+            logs.ProssesPlayerInfo(s1.name, land);
         }else if (count == 2){
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
@@ -38,7 +44,8 @@ public class HelloController {
             SpAusgabe.setText(s2.getName());
             LaAusgabe.setText(s2.land.getName());
             count++;
-            log.PlayerCreated(name);
+            logs.ProssesPlayerInfo(s2.name, land);
+
 
         }
 
