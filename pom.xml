@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.scrum/com.example.scrum.HelloApplication</mainClass>
+                            <mainClass>com.example.scrum/com.example.scrum.Application</mainClass>
                         </configuration>
                     </execution>
                 </executions>

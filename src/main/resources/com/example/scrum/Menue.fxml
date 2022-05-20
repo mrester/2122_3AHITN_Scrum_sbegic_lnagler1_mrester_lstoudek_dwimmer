@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import com.sun.org.apache.xpath.internal.operations.String?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0"
+      prefWidth="464.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.scrum.Controller_Menue">
+    <children>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
+            <children>
+                <Label prefHeight="30.0" text="Geben Sie Ihren Namen ein!">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="176.0" prefWidth="600.0">
+            <children>
+                <TextField fx:id="eingabe" maxWidth="150.0" prefHeight="25.0" prefWidth="50.0"/>
+                <ChoiceBox fx:id="LaChoiceBox" prefWidth="150.0">
+                    <!--items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Japan"/>
+                            <String fx:value="Deutschland"/>
+                            <String fx:value="USA"/>
+                            <String fx:value="China"/>
+                            <String fx:value="Großbritanien"/>
+                            <String fx:value="Russland"/>
+                        </FXCollections>
+                    </items-->
+                </ChoiceBox>
+                <Button fx:id="confirm" mnemonicParsing="false" onAction="#pressed" text="Confirm"/>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+            <children>
+                <Label prefHeight="39.0" text="Ihre Auswahl !">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="128.0" prefWidth="600.0">
+            <children>
+                <VBox>
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="65.0" prefWidth="40.0" text="Name: "/>
+                                <Label fx:id="SpAusgabe" prefHeight="65.0" prefWidth="58.0"/>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="65.0" prefWidth="40.0" text="Land: "/>
+                                <Label fx:id="LaAusgabe" prefHeight="64.0" prefWidth="114.0"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

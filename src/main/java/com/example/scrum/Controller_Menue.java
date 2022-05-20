@@ -1,16 +1,15 @@
 package com.example.scrum;
 
+import com.example.scrum.Spieler;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 
-public class HelloController {
-    public static int count =1;
+public class Controller_Menue {
+    public static int count = 1;
     @FXML
     public ChoiceBox LaChoiceBox;
     public Label SpAusgabe;
@@ -24,22 +23,24 @@ public class HelloController {
 
     public void initialize() throws IOException {
         logs.fileManager();
+        LaChoiceBox.setItems(FXCollections.observableArrayList(
+                "Japan", "Deutschland", "USA", "Russland", "China", "Großbritanien"));
     }
 
     public void pressed(ActionEvent actionEvent) throws IOException {
-        if (count == 1){
+        if (count == 1) {
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
-            s1 = new Spieler(name,land);
+            s1 = new Spieler(name, land);
 
             SpAusgabe.setText(s1.getName());
             LaAusgabe.setText(s1.land.getName());
             count++;
             logs.ProssesPlayerInfo(s1.name, land);
-        }else if (count == 2){
+        } else if (count == 2) {
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
-            s2 = new Spieler(name,land);
+            s2 = new Spieler(name, land);
 
             SpAusgabe.setText(s2.getName());
             LaAusgabe.setText(s2.land.getName());
@@ -48,9 +49,5 @@ public class HelloController {
 
 
         }
-
-
-
-
     }
 }
