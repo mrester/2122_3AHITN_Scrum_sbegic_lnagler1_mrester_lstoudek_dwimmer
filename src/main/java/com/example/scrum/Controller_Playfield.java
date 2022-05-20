@@ -66,6 +66,10 @@ class MyPane extends Pane {
 public class Controller_Playfield {
     public GridPane ownPlayField;
     public GridPane enemyField;
+    public GridPane columnNaming;
+    public GridPane columnNaming1;
+    public GridPane rowNaming;
+    public GridPane rowNaming1;
 
     /**
      * Klasse: Spielfeld
@@ -76,6 +80,10 @@ public class Controller_Playfield {
     public void initialize() {
         for (int i = 0; i < ownPlayField.getRowCount(); i++) {
             for (int j = 0; j < ownPlayField.getColumnCount(); j++) {
+                columnNaming.add(new Label(" " + i), i, 0);
+                columnNaming1.add(new Label(" " + i), i, 0);
+                rowNaming.add(new Label("" + i), 0, i);
+                rowNaming1.add(new Label("" + i), 0, i);
                 new MyPane(i, j, ownPlayField);
                 new MyPane(i, j, enemyField);
             }
