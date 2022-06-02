@@ -10,15 +10,15 @@
 
 <VBox id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="593.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_Menue">
     <children>
-      <VBox prefHeight="37.0" prefWidth="593.0" />
-        <VBox alignment="CENTER_LEFT" prefHeight="176.0" prefWidth="600.0">
+      <VBox prefHeight="39.0" prefWidth="593.0" />
+        <VBox alignment="CENTER_LEFT" prefHeight="198.0" prefWidth="593.0">
             <children>
                 <Label prefHeight="30.0" text="Geben Sie Ihren Namen ein!" textFill="#0bff0f">
                     <font>
-                        <Font size="18.0" />
+                        <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
-                <TextField fx:id="eingabe" maxWidth="150.0" opacity="0.6" prefHeight="25.0" prefWidth="50.0" />
+                <TextField fx:id="eingabe" maxWidth="150.0" opacity="0.8" prefHeight="25.0" prefWidth="50.0" />
                 <ChoiceBox fx:id="LaChoiceBox" prefWidth="150.0">
                     <!--items>
                         <FXCollections fx:factory="observableArrayList">
@@ -31,14 +31,17 @@
                         </FXCollections>
                     </items-->
                 </ChoiceBox>
-                <Button fx:id="confirm" mnemonicParsing="false" onAction="#pressed" text="Confirm" textFill="#60d749" />
+                <Button fx:id="confirm" mnemonicParsing="false" onAction="#pressed" prefHeight="25.0" prefWidth="149.0" text="Confirm" textFill="#27d046">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
             </children>
         </VBox>
-        <VBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="593.0">
+        <VBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="593.0">
             <children>
                 <Label prefHeight="39.0" text="Ihre Auswahl !" textFill="#00ffee">
                     <font>
-                        <Font size="20.0" />
+                        <Font name="System Bold" size="20.0" />
                     </font>
                 </Label>
             </children>
@@ -49,14 +52,20 @@
                     <children>
                         <HBox prefHeight="47.0" prefWidth="593.0">
                             <children>
-                                <Label prefHeight="50.0" prefWidth="40.0" text="Name: " textFill="#00e1ff" />
-                                <Label fx:id="SpAusgabe" prefHeight="35.0" prefWidth="140.0" />
+                                <Label prefHeight="50.0" prefWidth="40.0" text="Name: " textFill="#00ffee">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                                <Label fx:id="SpAusgabe" prefHeight="35.0" prefWidth="140.0" textFill="#00ffee" />
                             </children>
                         </HBox>
                         <HBox prefHeight="50.0" prefWidth="593.0">
                             <children>
-                                <Label prefHeight="65.0" prefWidth="40.0" text="Land: " textFill="#00e1ff" />
-                                <Label fx:id="LaAusgabe" prefHeight="35.0" prefWidth="130.0" />
+                                <Label prefHeight="65.0" prefWidth="40.0" text="Land: " textFill="#00ffee">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                                <Label fx:id="LaAusgabe" prefHeight="35.0" prefWidth="130.0" textFill="#00ffee" />
                             </children>
                         </HBox>
                     </children>
