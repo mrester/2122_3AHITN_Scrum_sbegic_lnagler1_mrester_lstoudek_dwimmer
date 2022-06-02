@@ -44,20 +44,22 @@ public class Spielfeld {
     }
 
     /**
+     * //muss noch eingeführt werden
+     *derweil treffer = true else false
      * @return 0 = nicht getroffen
      * 1 = treffer
      * 2 = versenkt
      */
-    public int tipp(Position position) {
-        int rv = 0;
+    public boolean tipp(Position position) {
+        boolean rv = false;
         if (askPosition(position) > 0) {
             for (int i = 0; i < schiffe.length; i++) {
                 if (schiffe[i] != null) {
                     if (schiffe[i].hit(position)) {
-                        //Todo mark as shot on
+                        //Todo mark ship as shot on
                         System.out.print("hit");
                         System.out.println(feld[position.getCol()][position.getRow()]);
-                        rv = 1;
+                        rv = true;
                     }
                 }
             }

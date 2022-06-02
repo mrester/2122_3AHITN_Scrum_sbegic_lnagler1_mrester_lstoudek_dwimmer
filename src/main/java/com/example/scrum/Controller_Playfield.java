@@ -21,13 +21,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 
-class MyPane extends Pane{
+class MyPane extends Pane {
     Pane pane = new Pane();
     Background getroffen = new Background(new BackgroundFill(Color.RED, CornerRadii.EMPTY, Insets.EMPTY));
     Background verfehlt = new Background(new BackgroundFill(Color.DARKGRAY, CornerRadii.EMPTY, Insets.EMPTY));
     Background versenkt = new Background(new BackgroundFill(Color.DARKRED, CornerRadii.EMPTY, Insets.EMPTY));
 
-    MyPane(int row, int column, GridPane field){
+    MyPane(int row, int column, GridPane field) {
         field.add(pane, row, column);
 
         pane.addEventHandler(MouseEvent.MOUSE_CLICKED,
@@ -63,9 +63,13 @@ class MyPane extends Pane{
 }
 
 
-public class PlayFieldController {
+public class Controller_Playfield {
     public GridPane ownPlayField;
     public GridPane enemyField;
+    public GridPane columnNaming;
+    public GridPane columnNaming1;
+    public GridPane rowNaming;
+    public GridPane rowNaming1;
 
     /**
      * Klasse: Spielfeld
@@ -73,10 +77,14 @@ public class PlayFieldController {
      * jeder Zelle der GridPane wird eine Pane (Der Klasse MyPane) untergeordnet, damit man
      * mit row und column auf jede einzelne Zelle zugreifen kann.
      */
-    public void initialize(){
+    public void initialize() {
         for (int i = 0; i < ownPlayField.getRowCount(); i++) {
             for (int j = 0; j < ownPlayField.getColumnCount(); j++) {
-                new MyPane(i, j ,ownPlayField);
+                columnNaming.add(new Label(" " + i), i, 0);
+                columnNaming1.add(new Label(" " + i), i, 0);
+                rowNaming.add(new Label("" + i), 0, i);
+                rowNaming1.add(new Label("" + i), 0, i);
+                new MyPane(i, j, ownPlayField);
                 new MyPane(i, j, enemyField);
             }
         }
