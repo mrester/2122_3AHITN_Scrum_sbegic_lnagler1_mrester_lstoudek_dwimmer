@@ -49,7 +49,14 @@ public class Controller_Menue {
             count++;
             logs.ProssesPlayerInfo(s2.name, land);
             eingabe.clear();
+            switchToPlayfield();
+
 
         }
+
+    }
+    public void switchToPlayfield() throws IOException {
+        Application.setRoot("Playfield");
+
     }
 }
