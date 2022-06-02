@@ -37,6 +37,8 @@ public class Controller_Menue {
             LaAusgabe.setText(s1.land.getName());
             count++;
             logs.ProssesPlayerInfo(s1.name, land);
+            eingabe.clear();
+
         } else if (count == 2) {
             String name = eingabe.getText();
             String land = String.valueOf(LaChoiceBox.getValue());
@@ -46,7 +48,7 @@ public class Controller_Menue {
             LaAusgabe.setText(s2.land.getName());
             count++;
             logs.ProssesPlayerInfo(s2.name, land);
-
+            eingabe.clear();
 
         }
     }
