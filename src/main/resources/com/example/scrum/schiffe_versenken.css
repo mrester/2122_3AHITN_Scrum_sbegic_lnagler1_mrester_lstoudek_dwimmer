@@ -1,0 +1,5 @@
+.Gidpane{
+    -fx-border-width: 2px;
+    -fx-grid-lines-visible: true;
+    -fx-border-color: black;
+}
