@@ -1,5 +1,6 @@
 package com.example.scrum;
 
+
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -175,7 +176,12 @@ public class Shipplacement {
             int col = GridPane.getColumnIndex(node);
             int row = GridPane.getRowIndex(node);
             Position position = new Position(col, row);
-            spielfeld.tipp(position);
+            if (spielfeld.tipp(position)){
+                node.setStyle("-fx-background-color: darkred");
+            } else {
+                node.setStyle("-fx-background-color: darkgrey");
+            }
+            node.setDisable(true);
         }
     }
 }
