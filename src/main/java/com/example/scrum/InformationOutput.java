@@ -82,7 +82,7 @@ public class InformationOutput {
         return timeDate + " " + parsedDate;
     }
 
-    public void inputError(){
-        System.out.print("Missing or Invalid Input-Parameters!");
+    public void InputError() {
+        System.out.println("Missing or Invalid Input Parameters!");
     }
 }
