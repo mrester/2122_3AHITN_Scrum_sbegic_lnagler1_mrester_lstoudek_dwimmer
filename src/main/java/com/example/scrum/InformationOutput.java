@@ -62,6 +62,14 @@ public class InformationOutput {
     public void whichFieldHit() {
 
     }
+    public void shipPlaced(Position pos) throws IOException {
+        System.out.println("Schiff platziert");
+        String text = getTime() + " Schiff wurde an der Row: " + pos.row + " und an der Colum: " + pos.col + " Platziert \r\n";
+        FileOutputStream fos = new FileOutputStream("logs.txt", true);
+        fos.write(text.getBytes());
+        fos.close();
+
+    }
 
     /**
      * Funktionsbeschreibung

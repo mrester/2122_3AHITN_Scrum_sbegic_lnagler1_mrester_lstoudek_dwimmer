@@ -11,6 +11,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
+import java.io.IOException;
+
 public class Shipplacement {
     @FXML
     private GridPane gridpane;
@@ -27,6 +29,7 @@ public class Shipplacement {
     @FXML
     Button butt;
     Spielfeld spielfeld = new Spielfeld();
+    InformationOutput log = new InformationOutput();
 
     EventHandler<? super MouseEvent> handleEventTipp = new HandleEventTipp<MouseEvent>();
 
@@ -80,6 +83,11 @@ public class Shipplacement {
             Position position = new Position(col, row);
             if (spielfeld.tipp(position)){
                 node.setStyle("-fx-background-color: darkred");
+                try {
+                    log.shipPlaced(position);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else {
                 node.setStyle("-fx-background-color: darkgrey");
             }
