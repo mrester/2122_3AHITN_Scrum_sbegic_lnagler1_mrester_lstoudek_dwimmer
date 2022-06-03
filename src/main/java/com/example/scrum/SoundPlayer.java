@@ -1,4 +1,4 @@
-package com.example.scrum;
+/*package com.example.scrum;
 
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.AudioDevice;
@@ -89,4 +89,4 @@ public class SoundPlayer {
         System.out.println("A Error occurred while playing: " + filename);
     }
 
-}
+}*/
