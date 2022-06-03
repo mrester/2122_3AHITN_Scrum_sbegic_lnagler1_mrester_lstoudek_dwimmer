@@ -11,9 +11,9 @@ public class Spielfeld {
      * 3 = Kreuzer
      * 4 = Schlachtschiff
      */
-    int[][] feld = new int[15][15];
+    static int[][] feld = new int[15][15];
 
-    Schiff[] schiffe = new Schiff[10];
+    static Schiff[] schiffe = new Schiff[10];
 
     int countr = 0;
 
