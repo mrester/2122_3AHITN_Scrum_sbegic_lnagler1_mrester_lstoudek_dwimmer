@@ -73,10 +73,17 @@ public class Controller_Playfield {
      * mit row und column auf jede einzelne Zelle zugreifen kann.
      */
     public void initialize() {
+        GridPane gridPane = new GridPane();
+        int player = 1;
+        if (player == 1){
+            gridPane =  ownPlayField;
+        }else if (player == 2){
+            gridPane = enemyField;
+        }
         shipType.getItems().addAll("U-Boot", "Zerstörer", "Kreuzer", "Schlachtschiff");
         shipRotation.getItems().addAll("Right", "Left", "Up", "Down");
-        for (int i = 0; i < ownPlayField.getRowCount(); i++) {
-            for (int j = 0; j < ownPlayField.getColumnCount(); j++ ) {
+        for (int i = 0; i < gridPane.getRowCount(); i++) {
+            for (int j = 0; j < gridPane.getColumnCount(); j++ ) {
                 columnNaming.add(new Label(" " + i), i, 0);
                 columnNaming1.add(new Label(" " + i), i, 0);
                 rowNaming.add(new Label("" + i), 0, i);
