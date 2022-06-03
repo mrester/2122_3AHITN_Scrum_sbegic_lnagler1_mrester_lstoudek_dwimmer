@@ -14,16 +14,15 @@ public class Application extends javafx.application.Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("Menue"));
         stage.setScene(scene);
+        stage.sizeToScene();
         stage.show();
+        
 
-    }
-
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource(fxml + ".fxml"));
+
         return fxmlLoader.load();
     }
 

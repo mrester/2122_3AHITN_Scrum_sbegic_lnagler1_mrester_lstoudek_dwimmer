@@ -1,3 +1,4 @@
+SplashScreen  
 5.5.2022
 Krank
 6.5.2022
@@ -9,3 +10,6 @@ HelloController für logs bearbeitet
 2.6.2022
 Automatische Weiterleitung von Menue auf Playfield
 Application überarbeitet
+3.6.2022
+FXML switch finished 
+Infomation Output 
