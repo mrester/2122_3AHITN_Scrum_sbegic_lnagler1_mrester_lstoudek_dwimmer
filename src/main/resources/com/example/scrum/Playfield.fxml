@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_Playfield">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_Playfield">
    <children>
       <HBox layoutX="336.0" prefHeight="300.0" prefWidth="128.0">
          <children>
@@ -206,7 +206,11 @@
            <TextField fx:id="shipX" promptText="X" />
            <TextField fx:id="shipY" promptText="Y" />
            <ChoiceBox fx:id="shipRotation" prefWidth="150.0" />
-           <Button fx:id="butt" mnemonicParsing="false" onAction="#save" text="Button" />
+         <HBox alignment="CENTER">
+            <children>
+                 <Button fx:id="butt" mnemonicParsing="false" onAction="#save" text="Button" />
+            </children>
+         </HBox>
        </VBox>
    </children>
 </Pane>
