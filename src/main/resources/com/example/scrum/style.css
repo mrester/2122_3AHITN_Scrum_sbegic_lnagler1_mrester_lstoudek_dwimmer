@@ -19,3 +19,7 @@
 #toggle-button {
     -fx-background-color: green;
 }
+
+#exit-button{
+    -fx-background-color: red;
+}

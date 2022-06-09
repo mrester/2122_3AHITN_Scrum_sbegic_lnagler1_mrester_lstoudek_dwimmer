@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -25,6 +26,7 @@ public class Controller_Menue {
 
     //Confirm Button
     public Button confirm;
+    public Button exitBut;
     Spieler s1 = new Spieler();
     Spieler s2 = new Spieler();
 
@@ -72,4 +74,8 @@ public class Controller_Menue {
         }
     }
 
+    public void exitButPressed(ActionEvent actionEvent) {
+        Stage s = (Stage) exitBut.getScene().getWindow();
+        s.close();
+    }
 }
