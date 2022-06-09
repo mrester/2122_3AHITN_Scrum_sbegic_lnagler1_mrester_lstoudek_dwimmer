@@ -52,7 +52,7 @@ public class Controller_Menue {
         logs.ProssesPlayerInfo(s2.name, land2);
 
         if (name1.equals("") || name2.equals("") || name1.equals(name2) || land1.equals("null") || land2.equals("null") || land1.equals(land2)) {
-            logs.InputError();
+            //logs.InputError();
         }else {
 
             Stage stage1 = (Stage) confirm.getScene().getWindow();

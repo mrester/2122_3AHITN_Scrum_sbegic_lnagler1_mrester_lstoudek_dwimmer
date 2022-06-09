@@ -89,8 +89,4 @@ public class InformationOutput {
         LocalTime parsedDate = LocalTime.parse(timeTime, formatterTime);
         return timeDate + " " + parsedDate;
     }
-
-    public void InputError() {
-        System.out.println("Missing or Invalid Input Parameters!");
-    }
 }

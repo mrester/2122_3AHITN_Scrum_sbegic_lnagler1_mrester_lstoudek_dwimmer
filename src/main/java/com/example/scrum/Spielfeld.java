@@ -11,6 +11,9 @@ public class Spielfeld {
      * 3 = Kreuzer
      * 4 = Schlachtschiff
      */
+
+
+
     static int[][] feld = new int[15][15];
 
     static Schiff[] schiffe = new Schiff[10];
@@ -45,7 +48,8 @@ public class Spielfeld {
 
     /**
      * //muss noch eingeführt werden
-     *derweil treffer = true else false
+     * derweil treffer = true else false
+     *
      * @return 0 = nicht getroffen
      * 1 = treffer
      * 2 = versenkt
@@ -56,7 +60,8 @@ public class Spielfeld {
             for (int i = 0; i < schiffe.length; i++) {
                 if (schiffe[i] != null) {
                     if (schiffe[i].hit(position)) {
-                        //Todo mark shipas shot on
+                        //Todo mark ship as shot on
+
                         System.out.print("hit");
                         System.out.println(feld[position.getCol()][position.getRow()]);
                         rv = true;
