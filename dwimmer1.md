@@ -12,4 +12,8 @@ Automatische Weiterleitung von Menue auf Playfield
 Application überarbeitet
 3.6.2022
 FXML switch finished 
-Infomation Output 
+Logs für Shipplacement
+9.6.2022
+Logs für treffer/keintreffer
+getnamen funktion für logs
+update der logs

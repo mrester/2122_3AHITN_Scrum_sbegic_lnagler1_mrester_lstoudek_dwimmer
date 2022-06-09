@@ -39,6 +39,7 @@ public class Shipplacement {
     int countZerstörer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
+    int id = 0;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -87,7 +88,8 @@ public class Shipplacement {
                 soundPlayer.playFile("C:\\Schule\\3AHITN\\ITP_Schiffeversenken\\2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer\\src\\main\\resources\\com\\example\\scrum\\Ship-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkred");
                 try {
-                    log.shipPlaced(position);
+
+                    log.shipHitOrMiss(position, id);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
