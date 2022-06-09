@@ -15,7 +15,7 @@
             <Button id="exit-button" fx:id="exitBut" mnemonicParsing="false" onAction="#exitButPressed" stylesheets="@style.css" text="X" />
          </children>
       </HBox>
-        <HBox prefHeight="221.0" prefWidth="593.0">
+        <HBox prefHeight="191.0" prefWidth="583.0">
             <children>
                 <VBox alignment="CENTER_LEFT" prefHeight="314.0" prefWidth="593.0">
                     <children>
