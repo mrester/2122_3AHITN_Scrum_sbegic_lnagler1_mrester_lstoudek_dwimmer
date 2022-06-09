@@ -1,6 +1,8 @@
 package com.example.scrum;
 
 
+import java.io.IOException;
+
 public class Spielfeld {
 
     /**
@@ -12,10 +14,11 @@ public class Spielfeld {
      * 4 = Schlachtschiff
      */
     static int[][] feld = new int[15][15];
-
+    InformationOutput log = new InformationOutput();
     static Schiff[] schiffe = new Schiff[10];
 
     int countr = 0;
+    int id = 1;
 
     Spielfeld() {
         for (int i = feld.length; i > 0; i--) {
@@ -64,6 +67,11 @@ public class Spielfeld {
                 }
             }
         } else {
+            try {
+                log.shipHitOrMiss(position, id);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             System.out.println("missed");
         }
         return rv;

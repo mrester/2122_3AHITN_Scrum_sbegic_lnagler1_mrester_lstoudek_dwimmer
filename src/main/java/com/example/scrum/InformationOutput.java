@@ -1,10 +1,8 @@
 package com.example.scrum;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
@@ -15,6 +13,7 @@ public class InformationOutput {
 
     Path path = Paths.get("logs.txt");
     File f = new File("logs.txt");
+    String Playername = "";
 
 
     public void fileManager() throws IOException {
@@ -41,10 +40,19 @@ public class InformationOutput {
 
     public void ProssesPlayerInfo(String name, String land) throws IOException {
         System.out.println(name + land);
+        setName(name);
         String text = getTime() + " Spieler mit dem Namen: " +  name + " und dem Land: " + land + " wurde erstellt\r\n";
         FileOutputStream fos = new FileOutputStream("logs.txt", true);
         fos.write(text.getBytes());
         fos.close();
+    }
+
+    public void setName(String name){
+        this.Playername = name;
+    }
+    public String getName(){
+
+        return Playername;
     }
 
     /**
@@ -62,9 +70,17 @@ public class InformationOutput {
     public void whichFieldHit() {
 
     }
-    public void shipPlaced(Position pos) throws IOException {
-        System.out.println("Schiff platziert");
-        String text = getTime() + " Schiff wurde an der Row: " + pos.row + " und an der Colum: " + pos.col + " Platziert \r\n";
+
+    public void shipHitOrMiss(Position pos, int identifier) throws IOException {
+        String text = "";
+
+        if (identifier == 0){
+             text = getTime() + " Schiff wurde an Row: " + pos.row + " und an Colum: " + pos.col + " Getroffen \r\n";
+
+        } else {
+            text = getTime() + Playername + " Hat daneben geschossen \r\n";
+        }
+
         FileOutputStream fos = new FileOutputStream("logs.txt", true);
         fos.write(text.getBytes());
         fos.close();

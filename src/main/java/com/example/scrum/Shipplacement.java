@@ -37,6 +37,7 @@ public class Shipplacement {
     int countZerstörer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
+    int id = 0;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -84,7 +85,8 @@ public class Shipplacement {
             if (spielfeld.tipp(position)){
                 node.setStyle("-fx-background-color: darkred");
                 try {
-                    log.shipPlaced(position);
+
+                    log.shipHitOrMiss(position, id);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
