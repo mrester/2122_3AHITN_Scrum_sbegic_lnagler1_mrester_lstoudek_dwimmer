@@ -14,7 +14,7 @@ public class SoundPlayer {
     private AdvancedPlayer player;
 
     public SoundPlayer(){
-        player = null;
+        //player = new AdvancedPlayer();
     }
 
     public void playFile(String filename){

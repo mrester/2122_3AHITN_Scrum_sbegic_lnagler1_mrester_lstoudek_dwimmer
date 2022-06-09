@@ -70,6 +70,7 @@ public class Spielfeld {
                     } else if (gwship == 2){
                         System.out.print("down");
                         System.out.println(feld[position.getCol()][position.getRow()]);
+                        rv = true;
                     }
                 }
             }

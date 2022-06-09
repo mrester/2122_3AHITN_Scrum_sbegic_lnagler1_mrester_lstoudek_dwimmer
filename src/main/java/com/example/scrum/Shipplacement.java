@@ -85,7 +85,7 @@ public class Shipplacement {
             int row = GridPane.getRowIndex(node);
             Position position = new Position(col, row);
             if (spielfeld.tipp(position)) {
-                soundPlayer.playFile("C:\\Schule\\3AHITN\\ITP_Schiffeversenken\\2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer\\src\\main\\resources\\com\\example\\scrum\\Ship-Hit-Sound.mp3");
+                soundPlayer.playFile("src/main/resources/com/example/scrum/Ship-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkred");
                 try {
 
@@ -94,7 +94,7 @@ public class Shipplacement {
                     e.printStackTrace();
                 }
             } else {
-                soundPlayer.playFile("C:\\Schule\\3AHITN\\ITP_Schiffeversenken\\2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer\\src\\main\\resources\\com\\example\\scrum\\Water-Hit-Sound.mp3");
+                soundPlayer.playFile("src/main/resources/com/example/scrum/Water-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkgrey");
             }
             node.setDisable(true);
