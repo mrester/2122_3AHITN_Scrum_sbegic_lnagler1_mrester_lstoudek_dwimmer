@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_Playfield">
+<Pane id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="834.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_Playfield">
    <children>
       <HBox layoutX="336.0" prefHeight="300.0" prefWidth="128.0">
          <children>
@@ -202,13 +202,13 @@
          </rowConstraints>
       </GridPane>
        <VBox layoutX="325.0" layoutY="355.0">
-           <ChoiceBox fx:id="shipType" prefWidth="150.0" />
-           <TextField fx:id="shipX" promptText="X" />
-           <TextField fx:id="shipY" promptText="Y" />
-           <ChoiceBox fx:id="shipRotation" prefWidth="150.0" />
+           <ChoiceBox fx:id="shipType" opacity="0.8" prefWidth="150.0" />
+           <TextField fx:id="shipX" opacity="0.8" promptText="X" />
+           <TextField fx:id="shipY" opacity="0.8" promptText="Y" />
+           <ChoiceBox fx:id="shipRotation" opacity="0.8" prefWidth="150.0" />
          <HBox alignment="CENTER">
             <children>
-                 <Button fx:id="butt" mnemonicParsing="false" onAction="#save" text="Button" />
+                 <Button id="toggle-button" fx:id="butt" mnemonicParsing="false" onAction="#save" stylesheets="@style.css" text="Setzen" />
             </children>
          </HBox>
        </VBox>
