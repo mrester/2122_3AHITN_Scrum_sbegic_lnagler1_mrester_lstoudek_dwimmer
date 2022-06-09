@@ -46,6 +46,8 @@ public class Controller_Playfield {
     public GridPane columnNaming1;
     public GridPane rowNaming;
     public GridPane rowNaming1;
+    public Label LandPL2;
+    public Label LandPL1;
     @FXML
     ChoiceBox<String> shipType;
     @FXML
@@ -59,6 +61,8 @@ public class Controller_Playfield {
     Button butt;
     Spielfeld spielfeld = new Spielfeld();
     Shipplacement sh = new Shipplacement();
+
+    Spieler spieler = new Spieler();
 
 
     int countUBoot = 4;
@@ -80,6 +84,10 @@ public class Controller_Playfield {
         }else if (player == 2){
             gridPane = enemyField;
         }
+
+        LandPL1.setText(spieler.getLand1());
+        LandPL2.setText(spieler.getLand2());
+
         shipType.getItems().addAll("U-Boot", "Zerstörer", "Kreuzer", "Schlachtschiff");
         shipRotation.getItems().addAll("Right", "Left", "Up", "Down");
         for (int i = 0; i < gridPane.getRowCount(); i++) {
