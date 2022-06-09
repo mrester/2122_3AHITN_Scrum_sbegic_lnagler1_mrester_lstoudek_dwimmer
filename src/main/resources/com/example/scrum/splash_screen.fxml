@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:id="stackpane" maxHeight="314.0" maxWidth="593.0" minHeight="314.0" minWidth="593.0" prefHeight="314.0" prefWidth="593.0" styleClass="pane" stylesheets="@schiffe_versenken.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.SplashScreen">
+   <children>
+      <Pane fx:id="stagepane" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</StackPane>

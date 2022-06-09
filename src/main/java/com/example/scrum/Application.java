@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -12,8 +13,9 @@ public class Application extends javafx.application.Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Menue"));
+        scene = new Scene(loadFXML("splash_screen"));
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.sizeToScene();
         stage.show();
         

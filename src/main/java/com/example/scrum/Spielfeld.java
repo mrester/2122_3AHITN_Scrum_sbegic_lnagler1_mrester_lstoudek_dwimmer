@@ -56,7 +56,7 @@ public class Spielfeld {
             for (int i = 0; i < schiffe.length; i++) {
                 if (schiffe[i] != null) {
                     if (schiffe[i].hit(position)) {
-                        //Todo mark ship as shot on
+                        //Todo mark shipas shot on
                         System.out.print("hit");
                         System.out.println(feld[position.getCol()][position.getRow()]);
                         rv = true;

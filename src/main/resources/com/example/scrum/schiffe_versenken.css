@@ -3,3 +3,7 @@
     -fx-grid-lines-visible: true;
     -fx-border-color: black;
 }
+
+.pane{
+    -fx-background-image: url("shio.jpg");
+}

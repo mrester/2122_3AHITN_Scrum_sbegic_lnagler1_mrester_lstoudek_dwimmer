@@ -6,3 +6,8 @@ able to place ships fia entry of x, y, rotation and length(via type)
 
 20.05.2022
 fixed bug with downplacement, max nr of ships placed
+
+02.06.2022
+informed about Splashscreen 
+
+
