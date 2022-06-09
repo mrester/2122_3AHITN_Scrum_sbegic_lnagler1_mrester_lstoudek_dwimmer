@@ -62,21 +62,18 @@ public class Spielfeld {
         if (askPosition(position) > 0) {
             for (int i = 0; i < schiffe.length; i++) {
                 if (schiffe[i] != null) {
-                    if (schiffe[i].hit(position)) {
-                        //Todo mark ship as shot on
-
+                    int gwship = schiffe[i].hit(position);
+                    if (gwship == 1) {
                         System.out.print("hit");
                         System.out.println(feld[position.getCol()][position.getRow()]);
                         rv = true;
+                    } else if (gwship == 2){
+                        System.out.print("down");
+                        System.out.println(feld[position.getCol()][position.getRow()]);
                     }
                 }
             }
         } else {
-            try {
-                log.shipHitOrMiss(position, id);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
             System.out.println("missed");
         }
         return rv;
