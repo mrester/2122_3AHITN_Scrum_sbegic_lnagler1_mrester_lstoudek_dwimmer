@@ -22,3 +22,182 @@
 09-06-2022 14:45:25 Spieler mit dem Namen: fdafa und dem Land: Japan wurde erstellt
 09-06-2022 14:46:45 Spieler mit dem Namen: dWQD und dem Land: Deutschland wurde erstellt
 09-06-2022 14:46:45 Spieler mit dem Namen: DSA und dem Land: Großbritanien wurde erstellt
+09-06-2022 14:53:28 Spieler mit dem Namen: qwer und dem Land: Deutschland wurde erstellt
+09-06-2022 14:53:28 Spieler mit dem Namen: qer und dem Land: Japan wurde erstellt
+03-06-2022 09:38:41 Spieler mit dem Namen: gfgf und dem Land: Deutschland wurde erstellt
+03-06-2022 09:38:41 Spieler mit dem Namen: fhghd und dem Land: Japan wurde erstellt
+03-06-2022 09:40:20 Spieler mit dem Namen: dfdfd und dem Land: Japan wurde erstellt
+03-06-2022 09:40:20 Spieler mit dem Namen: hjhfd und dem Land: USA wurde erstellt
+03-06-2022 09:42:41 Spieler mit dem Namen: ddfd und dem Land: Japan wurde erstellt
+03-06-2022 09:42:41 Spieler mit dem Namen: nhfs und dem Land: Deutschland wurde erstellt
+03-06-2022 09:43:02 Schiff wurde an der Row: 6 und an der Colum: 7 Platziert
+03-06-2022 09:43:08 Schiff wurde an der Row: 6 und an der Colum: 8 Platziert
+03-06-2022 09:45:05 Spieler mit dem Namen: gv und dem Land: Deutschland wurde erstellt
+03-06-2022 09:45:05 Spieler mit dem Namen: x und dem Land: Japan wurde erstellt
+03-06-2022 09:45:22 Schiff wurde an der Row: 7 und an der Colum: 7 Platziert
+03-06-2022 09:45:28 Schiff wurde an der Row: 7 und an der Colum: 8 Platziert
+03-06-2022 09:45:30 Schiff wurde an der Row: 7 und an der Colum: 9 Platziert
+03-06-2022 09:46:28 Spieler mit dem Namen: g und dem Land: Japan wurde erstellt
+03-06-2022 09:46:28 Spieler mit dem Namen: f und dem Land: Deutschland wurde erstellt
+03-06-2022 09:46:46 Schiff wurde an der Row: 6 und an der Colum: 7 Platziert
+09-06-2022 13:52:12 Spieler mit dem Namen: jfdkjf und dem Land: Russland wurde erstellt
+09-06-2022 13:52:12 Spieler mit dem Namen: hjtzt und dem Land: Deutschland wurde erstellt
+09-06-2022 13:53:27 Spieler mit dem Namen: fgtg und dem Land: Russland wurde erstellt
+09-06-2022 13:53:27 Spieler mit dem Namen: hzhehr und dem Land: Deutschland wurde erstellt
+09-06-2022 13:55:21 Spieler mit dem Namen: dfjksj und dem Land: Deutschland wurde erstellt
+09-06-2022 13:55:21 Spieler mit dem Namen: kiltrz und dem Land: USA wurde erstellt
+09-06-2022 13:55:48 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 13:57:26 Spieler mit dem Namen: grgbd und dem Land: Deutschland wurde erstellt
+09-06-2022 13:57:26 Spieler mit dem Namen: zttjter und dem Land: Japan wurde erstellt
+09-06-2022 13:57:54 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 14:01:27 Spieler mit dem Namen: fjksjfskd und dem Land: Japan wurde erstellt
+09-06-2022 14:01:27 Spieler mit dem Namen: dfsdfdafds und dem Land: China wurde erstellt
+09-06-2022 14:04:15 Spieler mit dem Namen: vfdgfsd und dem Land: Japan wurde erstellt
+09-06-2022 14:04:15 Spieler mit dem Namen: jhgdjgfhs und dem Land: USA wurde erstellt
+09-06-2022 14:04:36 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 14:12:04 Spieler mit dem Namen: fsfd und dem Land: Japan wurde erstellt
+09-06-2022 14:12:04 Spieler mit dem Namen: jhgfbvd und dem Land: USA wurde erstellt
+09-06-2022 14:26:34 Spieler mit dem Namen: dfsjkl und dem Land: Japan wurde erstellt
+09-06-2022 14:26:34 Spieler mit dem Namen: fdsfdsf und dem Land: USA wurde erstellt
+09-06-2022 14:26:57 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 14:27 Schiff wurde an der Row: 4 und an der Colum: 5 Platziert
+09-06-2022 14:27:01 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 14:27:10 Schiff wurde an der Row: 6 und an der Colum: 4 Platziert
+09-06-2022 14:27:13 Schiff wurde an der Row: 6 und an der Colum: 5 Platziert
+09-06-2022 14:27:14 Schiff wurde an der Row: 6 und an der Colum: 3 Platziert
+09-06-2022 14:28:03 Schiff wurde an der Row: 7 und an der Colum: 3 Platziert
+09-06-2022 14:28:04 Schiff wurde an der Row: 7 und an der Colum: 4 Platziert
+09-06-2022 14:28:05 Schiff wurde an der Row: 7 und an der Colum: 5 Platziert
+09-06-2022 14:28:07 Schiff wurde an der Row: 8 und an der Colum: 3 Platziert
+09-06-2022 14:28:08 Schiff wurde an der Row: 8 und an der Colum: 4 Platziert
+09-06-2022 14:28:09 Schiff wurde an der Row: 8 und an der Colum: 5 Platziert
+09-06-2022 14:28:10 Schiff wurde an der Row: 8 und an der Colum: 6 Platziert
+09-06-2022 14:28:16 Schiff wurde an der Row: 9 und an der Colum: 3 Platziert
+09-06-2022 14:28:19 Schiff wurde an der Row: 9 und an der Colum: 4 Platziert
+09-06-2022 14:28:23 Schiff wurde an der Row: 10 und an der Colum: 7 Platziert
+09-06-2022 14:28:24 Schiff wurde an der Row: 10 und an der Colum: 6 Platziert
+09-06-2022 14:28:25 Schiff wurde an der Row: 9 und an der Colum: 5 Platziert
+09-06-2022 14:28:27 Schiff wurde an der Row: 9 und an der Colum: 6 Platziert
+09-06-2022 14:30:29 Spieler mit dem Namen: dsfkls und dem Land: Deutschland wurde erstellt
+09-06-2022 14:30:29 Spieler mit dem Namen: sfdnsm,fns und dem Land: USA wurde erstellt
+09-06-2022 14:31:45 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 14:31:47 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 14:31:49 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 14:31:50 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 14:31:51 Schiff wurde an der Row: 9 und an der Colum: 3 Platziert
+09-06-2022 14:31:52 Schiff wurde an der Row: 9 und an der Colum: 5 Platziert
+09-06-2022 14:31:53 Schiff wurde an der Row: 6 und an der Colum: 1 Platziert
+09-06-2022 14:31:54 Schiff wurde an der Row: 8 und an der Colum: 3 Platziert
+09-06-2022 14:31:55 Schiff wurde an der Row: 8 und an der Colum: 2 Platziert
+09-06-2022 14:31:55 Schiff wurde an der Row: 6 und an der Colum: 2 Platziert
+09-06-2022 14:31:57 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 14:31:59 Schiff wurde an der Row: 3 und an der Colum: 1 Platziert
+09-06-2022 14:32 Schiff wurde an der Row: 7 und an der Colum: 1 Platziert
+09-06-2022 14:32:01 Schiff wurde an der Row: 8 und an der Colum: 4 Platziert
+09-06-2022 14:32:02 Schiff wurde an der Row: 7 und an der Colum: 2 Platziert
+09-06-2022 14:32:05 Schiff wurde an der Row: 8 und an der Colum: 1 Platziert
+09-06-2022 14:32:05 Schiff wurde an der Row: 9 und an der Colum: 1 Platziert
+09-06-2022 14:32:06 Schiff wurde an der Row: 9 und an der Colum: 2 Platziert
+09-06-2022 14:32:07 Schiff wurde an der Row: 9 und an der Colum: 4 Platziert
+09-06-2022 14:32:08 Schiff wurde an der Row: 7 und an der Colum: 4 Platziert
+09-06-2022 14:32:09 Schiff wurde an der Row: 6 und an der Colum: 3 Platziert
+09-06-2022 14:32:09 Schiff wurde an der Row: 7 und an der Colum: 3 Platziert
+09-06-2022 14:32:15 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 14:32:17 Schiff wurde an der Row: 3 und an der Colum: 2 Platziert
+09-06-2022 14:32:21 Schiff wurde an der Row: 4 und an der Colum: 1 Platziert
+09-06-2022 14:32:23 Schiff wurde an der Row: 5 und an der Colum: 3 Platziert
+09-06-2022 14:32:24 Schiff wurde an der Row: 5 und an der Colum: 2 Platziert
+09-06-2022 14:32:26 Schiff wurde an der Row: 5 und an der Colum: 1 Platziert
+09-06-2022 14:32:56 Schiff wurde an der Row: 8 und an der Colum: 3 Platziert
+09-06-2022 14:32:57 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 14:33:01 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 14:33:04 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 14:33:07 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 14:33:45 Schiff wurde an der Row: 3 und an der Colum: 1 Platziert
+09-06-2022 14:33:47 Schiff wurde an der Row: 3 und an der Colum: 2 Platziert
+09-06-2022 14:33:48 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 14:33:49 Schiff wurde an der Row: 4 und an der Colum: 1 Platziert
+09-06-2022 14:33:51 Schiff wurde an der Row: 5 und an der Colum: 1 Platziert
+09-06-2022 14:33:56 Schiff wurde an der Row: 5 und an der Colum: 2 Platziert
+09-06-2022 14:34:04 Schiff wurde an der Row: 6 und an der Colum: 1 Platziert
+09-06-2022 14:34:08 Schiff wurde an der Row: 7 und an der Colum: 3 Platziert
+09-06-2022 14:34:09 Schiff wurde an der Row: 6 und an der Colum: 2 Platziert
+09-06-2022 14:36:37 Spieler mit dem Namen: fjfsklf und dem Land: Japan wurde erstellt
+09-06-2022 14:36:37 Spieler mit dem Namen: vdfsdfa und dem Land: USA wurde erstellt
+09-06-2022 14:37:04 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 14:37:07 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 14:37:09 Schiff wurde an der Row: 2 und an der Colum: 3 Platziert
+09-06-2022 14:37:10 Schiff wurde an der Row: 2 und an der Colum: 4 Platziert
+09-06-2022 14:38:21 Schiff wurde an der Row: 4 und an der Colum: 1 Platziert
+09-06-2022 14:38:22 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 14:38:23 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 14:38:24 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 14:38:25 Schiff wurde an der Row: 4 und an der Colum: 5 Platziert
+09-06-2022 14:40:15 Spieler mit dem Namen: Manuel und dem Land: Japan wurde erstellt
+09-06-2022 14:40:15 Spieler mit dem Namen: Leini und dem Land: USA wurde erstellt
+09-06-2022 14:40:33 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 14:40:36 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 14:40:37 Schiff wurde an der Row: 1 und an der Colum: 3 Platziert
+09-06-2022 14:40:38 Schiff wurde an der Row: 1 und an der Colum: 4 Platziert
+09-06-2022 14:43:01 Spieler mit dem Namen: gdffs und dem Land: Deutschland wurde erstellt
+09-06-2022 14:43:01 Spieler mit dem Namen: jhgfd und dem Land: USA wurde erstellt
+09-06-2022 14:43:24 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 14:43:27 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 14:43:29 Schiff wurde an der Row: 1 und an der Colum: 3 Platziert
+09-06-2022 14:43:39 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 14:43:42 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 14:43:43 Schiff wurde an der Row: 2 und an der Colum: 3 Platziert
+                                                                                                                                                                                09-06-2022 15:00:56 Spieler mit dem Namen: zjhgfd und dem Land: Deutschland wurde erstellt
+09-06-2022 15:00:56 Spieler mit dem Namen: ijhgfcx und dem Land: Japan wurde erstellt
+09-06-2022 15:01:43 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 15:01:48 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 15:02:04 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 15:02:07 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 15:02:09 Schiff wurde an der Row: 3 und an der Colum: 1 Platziert
+09-06-2022 15:02:10 Schiff wurde an der Row: 3 und an der Colum: 2 Platziert
+09-06-2022 15:03:25 Schiff wurde an der Row: 4 und an der Colum: 1 Platziert
+09-06-2022 15:03:32 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 15:03:35 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 15:03:36 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 15:03:37 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 15:03:38 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 15:03:39 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 15:22:47 Spieler mit dem Namen: thgfdsa und dem Land: Deutschland wurde erstellt
+09-06-2022 15:22:47 Spieler mit dem Namen: ghjkjhgf und dem Land: Japan wurde erstellt
+09-06-2022 15:23:05 Schiff wurde an der Row: 2 und an der Colum: 1 Platziert
+09-06-2022 15:23:12 Schiff wurde an der Row: 2 und an der Colum: 2 Platziert
+09-06-2022 15:24:12 Schiff wurde an der Row: 3 und an der Colum: 1 Platziert
+09-06-2022 15:24:27 Schiff wurde an der Row: 3 und an der Colum: 2 Platziert
+09-06-2022 15:24:32 Schiff wurde an der Row: 3 und an der Colum: 3 Platziert
+09-06-2022 15:26:32 Spieler mit dem Namen: jhf und dem Land: Deutschland wurde erstellt
+09-06-2022 15:26:32 Spieler mit dem Namen: kjhgfx und dem Land: USA wurde erstellt
+09-06-2022 15:26:55 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 15:27:06 Schiff wurde an der Row: 1 und an der Colum: 3 Platziert
+09-06-2022 15:27:12 Schiff wurde an der Row: 1 und an der Colum: 4 Platziert
+09-06-2022 15:40:23 Spieler mit dem Namen: ezi und dem Land: Deutschland wurde erstellt
+09-06-2022 15:40:23 Spieler mit dem Namen: kjhgfd und dem Land: Japan wurde erstellt
+09-06-2022 15:41:01 Schiff wurde an der Row: 1 und an der Colum: 1 Platziert
+09-06-2022 15:41:07 Schiff wurde an der Row: 1 und an der Colum: 2 Platziert
+09-06-2022 15:41:13 Schiff wurde an der Row: 1 und an der Colum: 3 Platziert
+09-06-2022 15:41:26 Schiff wurde an der Row: 1 und an der Colum: 4 Platziert
+09-06-2022 15:41:36 Schiff wurde an der Row: 1 und an der Colum: 5 Platziert
+09-06-2022 15:42:03 Schiff wurde an der Row: 3 und an der Colum: 1 Platziert
+09-06-2022 15:42:09 Schiff wurde an der Row: 3 und an der Colum: 2 Platziert
+09-06-2022 15:42:14 Schiff wurde an der Row: 3 und an der Colum: 3 Platziert
+09-06-2022 15:42:24 Schiff wurde an der Row: 3 und an der Colum: 4 Platziert
+09-06-2022 15:42:57 Schiff wurde an der Row: 4 und an der Colum: 4 Platziert
+09-06-2022 15:43:02 Schiff wurde an der Row: 4 und an der Colum: 3 Platziert
+09-06-2022 15:43:07 Schiff wurde an der Row: 4 und an der Colum: 2 Platziert
+09-06-2022 15:43:12 Schiff wurde an der Row: 4 und an der Colum: 1 Platziert
+09-06-2022 15:45:38 Spieler mit dem Namen: jfsklfjs und dem Land: China wurde erstellt
+09-06-2022 15:45:38 Spieler mit dem Namen: sgdfd und dem Land: Japan wurde erstellt
+09-06-2022 15:46:01 Schiff wurde an Row: 1 und an Colum: 1 Getroffen
+09-06-2022 15:46:02 Hat daneben geschossen
+09-06-2022 15:46:11 Schiff wurde an Row: 1 und an Colum: 2 Getroffen
+09-06-2022 15:46:22 Hat daneben geschossen
+09-06-2022 15:46:32 Schiff wurde an Row: 2 und an Colum: 1 Getroffen
+09-06-2022 15:46:37 Schiff wurde an Row: 2 und an Colum: 2 Getroffen
+09-06-2022 15:46:37 Hat daneben geschossen
+09-06-2022 15:46:46 Schiff wurde an Row: 2 und an Colum: 3 Getroffen
+09-06-2022 15:46:46 Hat daneben geschossen
+09-06-2022 15:46:50 Hat daneben geschossen

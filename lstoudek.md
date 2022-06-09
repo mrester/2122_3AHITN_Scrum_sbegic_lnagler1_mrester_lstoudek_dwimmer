@@ -10,4 +10,6 @@ fixed bug with downplacement, max nr of ships placed
 02.06.2022
 informed about Splashscreen 
 
+09.06.2022
+Splashscreen + looked into drag and drop
 

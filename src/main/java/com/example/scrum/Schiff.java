@@ -44,12 +44,15 @@ public class Schiff {
         this.avtreffer--;
     }
 
-    public boolean hit(Position position){
-        boolean rv = false;
+    public int hit(Position position){
+        int rv = 0;
         for (int i = 0; i< posarr.length; i++){
             if (posarr[i].getCol() == position.getCol() && posarr[i].getRow() == position.getRow()){
-                rv = true;
+                rv = 1;
                 decTreffer();
+                if (avtreffer == 0){
+                    rv = 2;
+                }
             }
         }
         return rv;

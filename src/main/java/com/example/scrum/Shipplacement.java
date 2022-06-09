@@ -33,10 +33,13 @@ public class Shipplacement {
 
     EventHandler<? super MouseEvent> handleEventTipp = new HandleEventTipp<MouseEvent>();
 
+    private final SoundPlayer soundPlayer = new SoundPlayer();
+
     int countUBoot = 4;
     int countZerstörer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
+    int id = 0;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -81,14 +84,17 @@ public class Shipplacement {
             int col = GridPane.getColumnIndex(node);
             int row = GridPane.getRowIndex(node);
             Position position = new Position(col, row);
-            if (spielfeld.tipp(position)){
+            if (spielfeld.tipp(position)) {
+                soundPlayer.playFile("C:\\Schule\\3AHITN\\ITP_Schiffeversenken\\2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer\\src\\main\\resources\\com\\example\\scrum\\Ship-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkred");
                 try {
-                    log.shipPlaced(position);
+
+                    log.shipHitOrMiss(position, id);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             } else {
+                soundPlayer.playFile("C:\\Schule\\3AHITN\\ITP_Schiffeversenken\\2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer\\src\\main\\resources\\com\\example\\scrum\\Water-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkgrey");
             }
             node.setDisable(true);
