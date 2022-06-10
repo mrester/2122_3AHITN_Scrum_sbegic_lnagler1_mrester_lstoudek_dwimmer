@@ -24,6 +24,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 class MyPane extends Pane {
     Pane pane = new Pane();
@@ -48,6 +49,7 @@ public class Controller_Playfield {
     public GridPane rowNaming1;
     public Label LandPL2;
     public Label LandPL1;
+    public Button btExit;
     @FXML
     ChoiceBox<String> shipType;
     @FXML
@@ -79,9 +81,9 @@ public class Controller_Playfield {
     public void initialize() {
         GridPane gridPane = new GridPane();
         int player = 1;
-        if (player == 1){
-            gridPane =  ownPlayField;
-        }else if (player == 2){
+        if (player == 1) {
+            gridPane = ownPlayField;
+        } else if (player == 2) {
             gridPane = enemyField;
         }
 
@@ -91,7 +93,7 @@ public class Controller_Playfield {
         shipType.getItems().addAll("U-Boot", "Zerstörer", "Kreuzer", "Schlachtschiff");
         shipRotation.getItems().addAll("Right", "Left", "Up", "Down");
         for (int i = 0; i < gridPane.getRowCount(); i++) {
-            for (int j = 0; j < gridPane.getColumnCount(); j++ ) {
+            for (int j = 0; j < gridPane.getColumnCount(); j++) {
                 columnNaming.add(new Label(" " + i), i, 0);
                 columnNaming1.add(new Label(" " + i), i, 0);
                 rowNaming.add(new Label("" + i), 0, i);
@@ -139,7 +141,7 @@ public class Controller_Playfield {
                     placedt = countKreuzer;
                     type = 3;
                     countKreuzer--;
-                }else {
+                } else {
                     shipsOver = false;
                 }
                 break;
@@ -149,7 +151,7 @@ public class Controller_Playfield {
                     countSchlachtschiff--;
                     positions = new Position[5];
                     type = 4;
-                }else {
+                } else {
                     shipsOver = false;
                 }
         }
@@ -203,4 +205,10 @@ public class Controller_Playfield {
         }
 
     }
+
+    public void ExitButtPressed(ActionEvent actionEvent) {
+        Stage s = (Stage) btExit.getScene().getWindow();
+        s.close();
+    }
+
 }

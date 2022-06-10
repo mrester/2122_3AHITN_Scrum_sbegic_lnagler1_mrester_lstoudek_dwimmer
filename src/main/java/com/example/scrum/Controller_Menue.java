@@ -66,6 +66,7 @@ public class Controller_Menue {
                 root1 = fxmlLoader.load(Objects.requireNonNull(getClass().getResource("Playfield.fxml")).openStream());
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
+                stage.initStyle(StageStyle.UNDECORATED);
                 stage.show();
             } catch (IOException e) {
                 System.out.println("wia hom a problem!");
