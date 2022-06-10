@@ -15,7 +15,6 @@ public class Spielfeld {
      */
 
 
-
     static int[][] feld = new int[15][15];
     InformationOutput log = new InformationOutput();
     static Schiff[] schiffe = new Schiff[10];
@@ -67,7 +66,7 @@ public class Spielfeld {
                         System.out.print("hit");
                         System.out.println(feld[position.getCol()][position.getRow()]);
                         rv = true;
-                    } else if (gwship == 2){
+                    } else if (gwship == 2) {
                         System.out.print("down");
                         System.out.println(feld[position.getCol()][position.getRow()]);
                         rv = true;
@@ -91,36 +90,32 @@ public class Spielfeld {
         switch (value) {
             case "Left":
                 for (int i = 0; i < positions.length; i++) {
-                    if(feld[col - i][row] != 0){
+                    if (feld[col - i][row] != 0) {
                         rv = false;
                     }
                 }
                 break;
             case "Right":
                 for (int i = 0; i < positions.length; i++) {
-                    if(feld[col + i][row] != 0){
+                    if (feld[col + i][row] != 0) {
                         rv = false;
                     }
                 }
                 break;
             case "Up":
                 for (int i = 0; i < positions.length; i++) {
-                    if(feld[col][row - i] != 0){
+                    if (feld[col][row - i] != 0) {
                         rv = false;
                     }
                 }
                 break;
             case "Down":
                 for (int i = 0; i < positions.length; i++) {
-                    if(feld[col][row+i] != 0){
+                    if (feld[col][row + i] != 0) {
                         rv = false;
                     }
                 }
         }
-                return rv;
-
+        return rv;
     }
 }
-
-
-

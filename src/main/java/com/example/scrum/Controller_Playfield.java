@@ -14,7 +14,6 @@ package com.example.scrum;
 
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -68,7 +67,7 @@ public class Controller_Playfield {
 
 
     int countUBoot = 4;
-    int countZerstörer = 3;
+    int countZerstoerer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
 
@@ -126,10 +125,10 @@ public class Controller_Playfield {
                 }
                 break;
             case "Zerstörer":
-                if (countZerstörer != 0) {
+                if (countZerstoerer != 0) {
                     positions = new Position[3];
-                    placedt = countZerstörer;
-                    countZerstörer--;
+                    placedt = countZerstoerer;
+                    countZerstoerer--;
                     type = 2;
                 } else {
                     shipsOver = false;

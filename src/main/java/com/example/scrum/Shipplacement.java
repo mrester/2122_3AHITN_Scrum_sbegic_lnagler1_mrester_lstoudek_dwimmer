@@ -88,7 +88,6 @@ public class Shipplacement {
                 soundPlayer.playFile("src/main/resources/com/example/scrum/Ship-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkred");
                 try {
-
                     log.shipHitOrMiss(position, id);
                 } catch (IOException e) {
                     e.printStackTrace();

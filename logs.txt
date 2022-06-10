@@ -1,29 +1,4 @@
-09-06-2022 16:29:32 Spieler mit dem Namen: jhf und dem Land: Japan wurde erstellt
-09-06-2022 16:29:32 Spieler mit dem Namen: jhfgjhfg und dem Land: Russland wurde erstellt
-09-06-2022 16:30 Schiff wurde an Row: 5 und an Colum: 5 Getroffen 
-09-06-2022 16:30:07 Schiff wurde an Row: 6 und an Colum: 5 Getroffen 
-09-06-2022 16:30:18 Schiff wurde an Row: 7 und an Colum: 5 Getroffen 
-09-06-2022 16:30:24 Schiff wurde an Row: 8 und an Colum: 5 Getroffen 
-09-06-2022 16:30:30 Schiff wurde an Row: 9 und an Colum: 5 Getroffen 
-10-06-2022 08:11:49 Spieler mit dem Namen: dasfa und dem Land: Russland wurde erstellt
-10-06-2022 08:11:49 Spieler mit dem Namen: fdfd und dem Land: Japan wurde erstellt
-10-06-2022 08:12:19 Schiff wurde an Row: 5 und an Colum: 2 Getroffen 
-10-06-2022 08:12:29 Schiff wurde an Row: 5 und an Colum: 1 Getroffen 
-10-06-2022 08:14 Spieler mit dem Namen: cxxvc und dem Land: Deutschland wurde erstellt
-10-06-2022 08:14 Spieler mit dem Namen: vcyxvy und dem Land: China wurde erstellt
-10-06-2022 08:14:33 Spieler mit dem Namen: fgf und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:14:33 Spieler mit dem Namen: gf und dem Land: USA wurde erstellt
-10-06-2022 08:22:05 Spieler mit dem Namen: fdsafdsa und dem Land: Deutschland wurde erstellt
-10-06-2022 08:22:05 Spieler mit dem Namen: fdas und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:23:41 Spieler mit dem Namen: gfsdgfsd und dem Land: USA wurde erstellt
-10-06-2022 08:23:41 Spieler mit dem Namen: gfdsgsd und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:24:27 Spieler mit dem Namen: fda und dem Land: Russland wurde erstellt
-10-06-2022 08:24:27 Spieler mit dem Namen: fdsa und dem Land: USA wurde erstellt
-10-06-2022 08:24:48 Spieler mit dem Namen: aaaaaaaaaaaaaaaaaaaaaaaaaa und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:24:48 Spieler mit dem Namen: sdaffda und dem Land: Deutschland wurde erstellt
-10-06-2022 08:25:30 Spieler mit dem Namen: asdf und dem Land: Deutschland wurde erstellt
-10-06-2022 08:25:30 Spieler mit dem Namen: jklö und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:26:06 Spieler mit dem Namen: asdf und dem Land: Deutschland wurde erstellt
-10-06-2022 08:26:06 Spieler mit dem Namen: jklö und dem Land: Großbritanien wurde erstellt
-10-06-2022 08:27:43 Spieler mit dem Namen: 6 und dem Land: Deutschland wurde erstellt
-10-06-2022 08:27:43 Spieler mit dem Namen: 5 und dem Land: Großbritanien wurde erstellt
+10-06-2022 14:54:59 Spieler mit dem Namen:  und dem Land: null wurde erstellt
+10-06-2022 14:54:59 Spieler mit dem Namen:  und dem Land: null wurde erstellt
+10-06-2022 14:55:50 Spieler mit dem Namen:  und dem Land: null wurde erstellt
+10-06-2022 14:55:50 Spieler mit dem Namen:  und dem Land: null wurde erstellt

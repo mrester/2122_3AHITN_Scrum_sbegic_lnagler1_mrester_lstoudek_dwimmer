@@ -5,14 +5,21 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
+
+import static com.sun.tools.javac.resources.CompilerProperties.Warnings.Warning;
 
 public class Controller_Menue {
     @FXML
@@ -55,6 +62,35 @@ public class Controller_Menue {
 
         if (name1.equals("") || name2.equals("") || name1.equals(name2) || land1.equals("null") || land2.equals("null") || land1.equals(land2)) {
             //logs.InputError();
+            Stage window = new Stage();
+
+            //Window
+            window.initModality(Modality.APPLICATION_MODAL);
+            window.setTitle("Input-Error");
+
+
+            //Label
+            Label label = new Label();
+            label.setText("Missing or Invalid Input-Parameters!");
+            label.setStyle("-fx-font-size: 30");
+            label.setTextFill(Color.WHITE);
+
+            //Button
+            Button btn_close = new Button("OK");
+            btn_close.setMinSize(80, 30);
+            btn_close.setOnAction(e -> window.close());
+            btn_close.setStyle("-fx-background-color: WHITE");
+
+            //Vbox / Layout
+            VBox layout = new VBox(10);
+            layout.getChildren().addAll(label, btn_close);
+            layout.setAlignment(Pos.CENTER);
+            layout.setStyle("-fx-background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSropdEHx6PYFHHNyPavR0-UNv4UDc8wX4yhg&usqp=CAU'); -fx-background-repeat: no-repeat; -fx-background-size: 500 500; -fx-background-position: center center;");
+
+            Scene scene = new Scene(layout, 500, 400);
+            window.setScene(scene);
+            window.showAndWait();
+
         }else {
 
             Stage stage1 = (Stage) confirm.getScene().getWindow();

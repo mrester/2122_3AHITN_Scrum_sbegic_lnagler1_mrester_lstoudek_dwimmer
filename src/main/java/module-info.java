@@ -2,6 +2,7 @@ module com.example.scrum {
     requires javafx.controls;
     requires javafx.fxml;
     requires soundPlay;
+    requires jdk.compiler;
 
 
     opens com.example.scrum to javafx.fxml;
