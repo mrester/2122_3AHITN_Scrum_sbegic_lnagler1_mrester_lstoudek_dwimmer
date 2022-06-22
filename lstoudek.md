@@ -13,3 +13,6 @@ informed about Splashscreen
 09.06.2022
 Splashscreen + looked into drag and drop
 
+10.06.2022
+looked into drag and drop
+

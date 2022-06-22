@@ -19,7 +19,7 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 import java.util.Objects;
 
-import static com.sun.tools.javac.resources.CompilerProperties.Warnings.Warning;
+
 
 public class Controller_Menue {
     @FXML
