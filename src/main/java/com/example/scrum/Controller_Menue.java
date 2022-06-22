@@ -19,7 +19,7 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 import java.util.Objects;
 
-
+//import static com.sun.tools.javac.resources.CompilerProperties.Warnings.Warning;
 
 public class Controller_Menue {
     @FXML
@@ -57,7 +57,6 @@ public class Controller_Menue {
         String name2 = eingabe2.getText();
         String land2 = String.valueOf(LaChoiceBox2.getValue());
         s2 = new Spieler(name2, land2);
-
         logs.ProssesPlayerInfo(s2.name, land2);
 
         if (name1.equals("") || name2.equals("") || name1.equals(name2) || land1.equals("null") || land2.equals("null") || land1.equals(land2)) {
@@ -96,18 +95,8 @@ public class Controller_Menue {
             Stage stage1 = (Stage) confirm.getScene().getWindow();
             stage1.close();
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Playfield.fxml"));
-            Parent root1 = null;
-            try {
-                root1 = fxmlLoader.load(Objects.requireNonNull(getClass().getResource("Playfield.fxml")).openStream());
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root1));
-                stage.initStyle(StageStyle.UNDECORATED);
-                stage.show();
-            } catch (IOException e) {
-                System.out.println("wia hom a problem!");
-                e.printStackTrace();
-            }
+            MiddleMan middleMan = MiddleMan.getInstance();
+            middleMan.showPlayField();
         }
     }
 

@@ -29,7 +29,7 @@ public class SplashScreen extends Thread {
     @Override
     public void run() {
         try {
-            Thread.sleep(4000);
+            Thread.sleep(1000);
 
 
             Platform.runLater(new Runnable() {

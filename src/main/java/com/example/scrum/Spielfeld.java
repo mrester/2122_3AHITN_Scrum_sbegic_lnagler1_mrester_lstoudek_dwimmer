@@ -14,8 +14,8 @@ public class Spielfeld {
      * 4 = Schlachtschiff
      */
 
-
-    static int[][] feld = new int[15][15];
+    MiddleMan middleMan = MiddleMan.getInstance();
+    int[][] feld = new int[15][15];
     InformationOutput log = new InformationOutput();
     static Schiff[] schiffe = new Schiff[10];
 
@@ -26,7 +26,6 @@ public class Spielfeld {
         for (int i = feld.length; i > 0; i--) {
             for (int j = feld.length; j > 0; j--) {
                 feld[i - 1][j - 1] = 0;
-                System.out.println(feld[i - 1][j - 1]);
             }
         }
     }
@@ -36,6 +35,7 @@ public class Spielfeld {
         for (int j = 0; j < ship.posarr.length; j++) {
             if (feld[ship.posarr[j].getCol()][ship.posarr[j].getRow()] == 0) {
                 feld[ship.posarr[j].getCol()][ship.posarr[j].getRow()] = ship.id;
+                middleMan.setFeld(feld);
             }
         }
         schiffe[countr] = ship;
@@ -45,7 +45,7 @@ public class Spielfeld {
     }
 
     public int askPosition(Position position) {
-        return feld[position.getCol()][position.getRow()];
+        return middleMan.getFeld()[position.getCol()][position.getRow()];
     }
 
     /**
@@ -64,11 +64,11 @@ public class Spielfeld {
                     int gwship = schiffe[i].hit(position);
                     if (gwship == 1) {
                         System.out.print("hit");
-                        System.out.println(feld[position.getCol()][position.getRow()]);
+                        System.out.println(feld[position.getCol()][position.getRow()] + " Spielfeld - Zeile 67");
                         rv = true;
                     } else if (gwship == 2) {
                         System.out.print("down");
-                        System.out.println(feld[position.getCol()][position.getRow()]);
+                        System.out.println(feld[position.getCol()][position.getRow()]  + " Spielfeld - Zeile 67");
                         rv = true;
                     }
                 }

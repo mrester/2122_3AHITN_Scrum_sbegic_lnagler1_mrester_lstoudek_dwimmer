@@ -1,46 +1,23 @@
-/*-----------------------------------------------------------------------------
- *              Hoehere Technische Bundeslehranstalt STEYR
- *           Fachrichtung Informatik und Netzwerktechnik
- *----------------------------------------------------------------------------*/
-/**
- * Output des PlayFields
- *
- * @author : lnagler1
- * @date : 5.05. 2022
- * @details SchiffeVersenken, siehe Trello
- */
-
 package com.example.scrum;
 
-
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
-class MyPane extends Pane {
-    Pane pane = new Pane();
-    Background getroffen = new Background(new BackgroundFill(Color.RED, CornerRadii.EMPTY, Insets.EMPTY));
-    Background verfehlt = new Background(new BackgroundFill(Color.DARKGRAY, CornerRadii.EMPTY, Insets.EMPTY));
-    Background versenkt = new Background(new BackgroundFill(Color.DARKRED, CornerRadii.EMPTY, Insets.EMPTY));
-
-    MyPane(int row, int column, GridPane field) {
-        field.add(pane, row, column);
-        Shipplacement sh = new Shipplacement();
-        pane.addEventHandler(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
-    }
-}
-
-
-public class Controller_Playfield {
+public class Controller_PlayField2 {
+    public Button finished;
     public GridPane ownPlayField;
     public GridPane enemyField;
     public GridPane columnNaming;
@@ -51,7 +28,6 @@ public class Controller_Playfield {
     public Label LandPL1;
     public Button btExit;
     public Pane paneAll;
-
     @FXML
     ChoiceBox<String> shipType;
     @FXML
@@ -68,32 +44,43 @@ public class Controller_Playfield {
 
     Spieler spieler = new Spieler();
 
+    public static int a = 0;
+
 
     int countUBoot = 4;
     int countZerstoerer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
+    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("WhiteScreen.fxml"));
+    Parent root1 = fxmlLoader.load(Objects.requireNonNull(getClass().getResource("Whitescreen.fxml")).openStream());
+    Scene scene = new Scene(root1);
+    static Stage stage;
     MiddleMan middleMan = MiddleMan.getInstance();
-    static int a = 0;
 
-    /**
-     * Klasse: Spielfeld
-     * Methode: initialize
-     * jeder Zelle der GridPane wird eine Pane (Der Klasse MyPane) untergeordnet, damit man
-     * mit row und column auf jede einzelne Zelle zugreifen kann.
-     */
+
+    public Controller_PlayField2() throws IOException {
+    }
+
+    public void finishedPressed( ) throws IOException {
+        middleMan.showWhiteScreen();
+    }
+
     public void initialize() {
         GridPane gridPane = new GridPane();
         int player = 1;
-        gridPane = ownPlayField;
+        if (player == 1) {
+            gridPane = ownPlayField;
+        } else if (player == 2) {
+            gridPane = enemyField;
+        }
 
         LandPL1.setText(spieler.getLand1());
         LandPL2.setText(spieler.getLand2());
 
         shipType.getItems().addAll("U-Boot", "Zerstörer", "Kreuzer", "Schlachtschiff");
         shipRotation.getItems().addAll("Right", "Left", "Up", "Down");
-        for (int i = 0; i < gridPane.getRowCount(); i++) {
-            for (int j = 0; j < gridPane.getColumnCount(); j++) {
+        for (int i = 0; i < enemyField.getRowCount(); i++) {
+            for (int j = 0; j < enemyField.getColumnCount(); j++) {
                 columnNaming.add(new Label(" " + i), i, 0);
                 columnNaming1.add(new Label(" " + i), i, 0);
                 rowNaming.add(new Label("" + i), 0, i);
@@ -105,9 +92,6 @@ public class Controller_Playfield {
         // sf.tipp("A7")
     }
 
-    /**
-     * @author Leonhard Stoudek
-     */
     public void save() {
         int col = Integer.parseInt(shipX.getText());
         int row = Integer.parseInt(shipY.getText());
@@ -160,7 +144,7 @@ public class Controller_Playfield {
                     placedt = countSchlachtschiff;
                     type = 4;
                     positions[0] = new Position(col, row);
-                    if (spielfeld.checkposition(positions, shipRotation.getValue())) {
+                    if (spielfeld.checkposition(positions, shipRotation.getValue())){
                         countSchlachtschiff--;
                     }
 
@@ -169,7 +153,6 @@ public class Controller_Playfield {
                 }
         }
 
-        positions[0] = new Position(col, row);
 
         if (spielfeld.checkposition(positions, shipRotation.getValue()) && shipsOver) {
             switch (shipRotation.getValue()) {
@@ -177,6 +160,7 @@ public class Controller_Playfield {
                     for (int i = 0; i < positions.length; i++) {
                         positions[i] = new Position(col - i, row);
                         Pane pane = new Pane();
+                        pane.addEventFilter(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
                         pane.setStyle("-fx-background-color: red");
                         ownPlayField.add(pane, col - i, row);
                     }
@@ -185,6 +169,7 @@ public class Controller_Playfield {
                     for (int i = 0; i < positions.length; i++) {
                         positions[i] = new Position(col + i, row);
                         Pane pane = new Pane();
+                        pane.addEventFilter(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
                         pane.setStyle("-fx-background-color: red");
                         ownPlayField.add(pane, col + i, row);
                     }
@@ -193,6 +178,7 @@ public class Controller_Playfield {
                     for (int i = 0; i < positions.length; i++) {
                         positions[i] = new Position(col, row - i);
                         Pane pane = new Pane();
+                        pane.addEventFilter(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
                         pane.setStyle("-fx-background-color: red");
                         ownPlayField.add(pane, col, row - i);
                     }
@@ -201,6 +187,7 @@ public class Controller_Playfield {
                     for (int i = 0; i < positions.length; i++) {
                         positions[i] = new Position(col, row + i);
                         Pane pane = new Pane();
+                        pane.addEventFilter(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
                         pane.setStyle("-fx-background-color: red");
                         ownPlayField.add(pane, col, row + i);
                     }
@@ -215,13 +202,8 @@ public class Controller_Playfield {
 
         }
     }
-
-    public void ExitButtPressed() {
+    public void ExitButtPressed( ) {
         Stage s = (Stage) btExit.getScene().getWindow();
         s.close();
-    }
-
-    public void finishedPressed() throws IOException {
-        middleMan.showWhiteScreen();
     }
 }
