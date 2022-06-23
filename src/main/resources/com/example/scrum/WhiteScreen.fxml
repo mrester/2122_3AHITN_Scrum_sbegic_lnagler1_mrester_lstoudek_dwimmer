@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrum.Controller_WhiteScreen">
+   <children>
+      <Button layoutX="391.0" layoutY="247.0" mnemonicParsing="false" onAction="#readyPressed" text="Ready" />
+      <Label layoutX="238.0" layoutY="196.0" text="Wenn nächster Spieler Bereit ist, denn Button drücken">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
