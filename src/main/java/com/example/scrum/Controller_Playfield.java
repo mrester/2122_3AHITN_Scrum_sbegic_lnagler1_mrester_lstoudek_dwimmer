@@ -13,6 +13,8 @@
 package com.example.scrum;
 
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
@@ -65,6 +67,7 @@ public class Controller_Playfield {
     Button butt;
     Spielfeld spielfeld = new Spielfeld();
     Shipplacement sh = new Shipplacement();
+    InformationOutput log = new InformationOutput();
 
     Spieler spieler = new Spieler();
 
@@ -120,6 +123,7 @@ public class Controller_Playfield {
             case "U-Boot":
                 if (countUBoot != 0) {
                     placedt = countUBoot;
+                    log.setShipType(0);
                     positions[0] = new Position(col, row);
                     if (spielfeld.checkposition(positions, shipRotation.getValue())) {
                         countUBoot--;
@@ -133,6 +137,7 @@ public class Controller_Playfield {
                     positions = new Position[3];
                     placedt = countZerstoerer;
                     type = 2;
+                    log.setShipType(1);
                     positions[0] = new Position(col, row);
                     if (spielfeld.checkposition(positions, shipRotation.getValue())) {
                         countZerstoerer--;
@@ -146,11 +151,13 @@ public class Controller_Playfield {
                     positions = new Position[4];
                     placedt = countKreuzer;
                     type = 3;
+                    log.setShipType(2);
+                }
                     positions[0] = new Position(col, row);
                     if (spielfeld.checkposition(positions, shipRotation.getValue())) {
                         countKreuzer--;
                     }
-                } else {
+                 else {
                     shipsOver = false;
                 }
                 break;
@@ -164,11 +171,11 @@ public class Controller_Playfield {
                         countSchlachtschiff--;
                     }
 
-                } else {
+                }else {
+                log.setShipType(3);
                     shipsOver = false;
                 }
         }
-
         positions[0] = new Position(col, row);
 
         if (spielfeld.checkposition(positions, shipRotation.getValue()) && shipsOver) {
@@ -193,6 +200,7 @@ public class Controller_Playfield {
                     for (int i = 0; i < positions.length; i++) {
                         positions[i] = new Position(col, row - i);
                         Pane pane = new Pane();
+                        pane.addEventFilter(MouseEvent.MOUSE_CLICKED, sh.handleEventTipp);
                         pane.setStyle("-fx-background-color: red");
                         ownPlayField.add(pane, col, row - i);
                     }

@@ -98,8 +98,14 @@ public class Shipplacement {
                     e.printStackTrace();
                 }
             } else {
+                id = 1;
                 soundPlayer.playFile("src/main/resources/com/example/scrum/Water-Hit-Sound.mp3");
                 node.setStyle("-fx-background-color: darkgrey");
+                try {
+                    log.shipHitOrMiss(position, id);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
             node.setDisable(true);
         }

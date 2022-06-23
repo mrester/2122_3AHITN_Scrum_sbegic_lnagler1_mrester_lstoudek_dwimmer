@@ -34,8 +34,8 @@ public class Controller_Menue {
     //Confirm Button
     public Button confirm;
     public Button exitBut;
-    Spieler s1 = new Spieler();
-    Spieler s2 = new Spieler();
+    Spieler s1; // = new Spieler();
+    Spieler s2;// = new Spieler();
 
     InformationOutput logs = new InformationOutput();
 

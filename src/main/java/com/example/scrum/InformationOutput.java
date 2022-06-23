@@ -41,6 +41,7 @@ public class InformationOutput {
     public void ProssesPlayerInfo(String name, String land) throws IOException {
         System.out.println(name + land);
         setName(name);
+        this.Playername = name;
         String text = getTime() + " Spieler mit dem Namen: " +  name + " und dem Land: " + land + " wurde erstellt\r\n";
         FileOutputStream fos = new FileOutputStream("logs.txt", true);
         fos.write(text.getBytes());
@@ -54,31 +55,45 @@ public class InformationOutput {
 
         return Playername;
     }
+    public String setShipType(int id){
+        String shipType = "";
+        if (id == 0){
+            shipType = "U-Boot";
+        }else if (id == 1){
+            shipType = "Zerstörer";
+        }else if (id == 2){
+            shipType = "Kreuzer";
+        }else{
+            shipType = "Schlachtschiff";
+        }
+        return shipType;
+    }
 
-    /**
-     * Funktionsbeschreibung
-     * isHit dient dazu auszugeben ob etwas getroffen wurde oder nicht
-     */
+
+
+
     public void isHit() {
 
     }
 
-    /**
-     * Funktionsbeschreibung
-     * whichFieldHit dient dazu wenn ein Feld getroffen wurde auszugeben welches getroffen wurde
-     */
+
     public void whichFieldHit() {
 
     }
-
+    /**
+     * Funktionsbeschreibung
+     * shipHitorMiss dient dazu auszugeben ob etwas getroffen wurde oder nicht und wo etwas getroffen wurde
+     */
     public void shipHitOrMiss(Position pos, int identifier) throws IOException {
         String text = "";
+       // String shipType = setShipType();
 
         if (identifier == 0){
              text = getTime() + " Schiff wurde an Row: " + pos.row + " und an Colum: " + pos.col + " Getroffen \r\n";
 
         } else {
-            text = getTime() + Playername + " Hat daneben geschossen \r\n";
+            String player = getName();
+            text = getTime() + player + " Hat daneben geschossen. Auf Feld: ( " + pos.row + " / " + pos.col + " )" + "\r\n";
         }
 
         FileOutputStream fos = new FileOutputStream("logs.txt", true);
