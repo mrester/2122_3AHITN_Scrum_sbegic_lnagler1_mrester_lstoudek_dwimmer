@@ -217,6 +217,12 @@ public class Controller_Playfield {
             Schiff schiff = new Schiff(type, placedt);
             schiff.setShip(positions);
             spielfeld.setShip(schiff);
+
+            try {
+                log.shipInfo(shipRotation.getValue(),shipType.getValue(),shipX.getText(), shipY.getText());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(shipRotation.getValue() + shipType.getValue() + shipX.getText() + shipY.getText());
         } else {
             System.out.println("nicht möglich");

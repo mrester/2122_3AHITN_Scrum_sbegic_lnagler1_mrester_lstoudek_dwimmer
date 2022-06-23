@@ -68,6 +68,8 @@ public class Spielfeld {
                         rv = true;
                     } else if (gwship == 2) {
                         System.out.print("down");
+                        //log für down
+                        //log.versenkt();
                         System.out.println(feld[position.getCol()][position.getRow()]  + " Spielfeld - Zeile 67");
                         rv = true;
                     }

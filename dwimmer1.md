@@ -17,3 +17,7 @@ Logs für Shipplacement
 Logs für treffer/keintreffer
 getnamen funktion für logs
 update der logs
+23.6
+logs größtenteils fertiggestellt
+an schiff setz problem geholfen
+Fxml changes

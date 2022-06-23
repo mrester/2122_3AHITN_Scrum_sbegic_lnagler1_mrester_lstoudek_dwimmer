@@ -1,6 +1,7 @@
 package com.example.scrum;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -11,9 +12,9 @@ import java.time.format.DateTimeFormatter;
 
 public class InformationOutput {
 
-    Path path = Paths.get("logs.txt");
     File f = new File("logs.txt");
     String Playername = "";
+    String ship;
 
 
     public void fileManager() throws IOException {
@@ -38,6 +39,7 @@ public class InformationOutput {
         return fos;
     }
 
+
     public void ProssesPlayerInfo(String name, String land) throws IOException {
         System.out.println(name + land);
         setName(name);
@@ -48,6 +50,15 @@ public class InformationOutput {
         fos.close();
     }
 
+    public void shipInfo(String shipRotation, String shipType, String x, String y) throws IOException {
+        shipType = ship;
+
+        String text = getTime() + " Ein " + shipType + " wurde an position ( " + x + " / " + y + " ) platziert, mit der Ausrichtung: " + shipRotation + "\r\n";
+
+        FileOutputStream fos = new FileOutputStream("logs.txt", true);
+        fos.write(text.getBytes());
+        fos.close();
+    }
     public void setName(String name){
         this.Playername = name;
     }
@@ -55,7 +66,9 @@ public class InformationOutput {
 
         return Playername;
     }
-    public String setShipType(int id){
+
+
+    public void setShipType(int id){
         String shipType = "";
         if (id == 0){
             shipType = "U-Boot";
@@ -66,30 +79,19 @@ public class InformationOutput {
         }else{
             shipType = "Schlachtschiff";
         }
-        return shipType;
+        this.ship = shipType;
     }
 
 
-
-
-    public void isHit() {
-
-    }
-
-
-    public void whichFieldHit() {
-
-    }
     /**
      * Funktionsbeschreibung
      * shipHitorMiss dient dazu auszugeben ob etwas getroffen wurde oder nicht und wo etwas getroffen wurde
      */
     public void shipHitOrMiss(Position pos, int identifier) throws IOException {
         String text = "";
-       // String shipType = setShipType();
 
         if (identifier == 0){
-             text = getTime() + " Schiff wurde an Row: " + pos.row + " und an Colum: " + pos.col + " Getroffen \r\n";
+             text = getTime() + ship + " wurde an Row: " + pos.row + " und an Colum: " + pos.col + " Getroffen \r\n";
 
         } else {
             String player = getName();
@@ -120,4 +122,7 @@ public class InformationOutput {
         LocalTime parsedDate = LocalTime.parse(timeTime, formatterTime);
         return timeDate + " " + parsedDate;
     }
+
+
+
 }
