@@ -18,6 +18,8 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 //import static com.sun.tools.javac.resources.CompilerProperties.Warnings.Warning;
 
@@ -50,16 +52,18 @@ public class Controller_Menue {
     public void pressed(ActionEvent actionEvent) throws IOException {
         String name1 = eingabe1.getText();
         String land1 = String.valueOf(LaChoiceBox1.getValue());
-        s1 = new Spieler(name1, land1);
-
-        logs.ProssesPlayerInfo(s1.name, land1);
 
         String name2 = eingabe2.getText();
         String land2 = String.valueOf(LaChoiceBox2.getValue());
-        s2 = new Spieler(name2, land2);
-        logs.ProssesPlayerInfo(s2.name, land2);
+        Pattern pattern = Pattern.compile("[^A-z]");
+        Matcher m1 = pattern.matcher(name1);
+        Matcher m2 = pattern.matcher(name2);
+        boolean pat1 = m1.find();
+        boolean pat2 = m2.find();
 
-        if (name1.equals("") || name2.equals("") || name1.equals(name2) || land1.equals("null") || land2.equals("null") || land1.equals(land2)) {
+
+        if ( name1.equals("") || name2.equals("") || name1.equals(name2) || land1.equals("null") ||
+                land2.equals("null") || land1.equals(land2) || pat1 || pat2) {
             //logs.InputError();
             Stage window = new Stage();
 
@@ -90,13 +94,18 @@ public class Controller_Menue {
             window.setScene(scene);
             window.showAndWait();
 
-        }else {
+        } else {
 
             Stage stage1 = (Stage) confirm.getScene().getWindow();
             stage1.close();
 
             MiddleMan middleMan = MiddleMan.getInstance();
             middleMan.showPlayField();
+
+            s1 = new Spieler(name1, land1);
+            logs.ProssesPlayerInfo(s1.name, land1);
+            s2 = new Spieler(name2, land2);
+            logs.ProssesPlayerInfo(s2.name, land2);
         }
     }
 

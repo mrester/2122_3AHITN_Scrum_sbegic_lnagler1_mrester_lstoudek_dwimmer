@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer" options="--add-exports jdk.compiler/com.sun.tools.javac.resources=com.example.scrum" />
+      <module name="2122_3AHITN_Scrum_sbegic_lnagler1_mrester_lstoudek_dwimmer" options="" />
     </option>
   </component>
 </project>
