@@ -53,6 +53,7 @@ public class Controller_Playfield {
     public Label LandPL1;
     public Button btExit;
     public Pane paneAll;
+    public Button finished;
 
     @FXML
     ChoiceBox<String> shipType;
@@ -86,6 +87,9 @@ public class Controller_Playfield {
      * mit row und column auf jede einzelne Zelle zugreifen kann.
      */
     public void initialize() {
+        enemyField.setDisable(true);
+        finished.setDisable(true);
+        middleMan.setPlayer("Player1");
         GridPane gridPane = new GridPane();
         int player = 1;
         gridPane = ownPlayField;
@@ -213,6 +217,10 @@ public class Controller_Playfield {
                         ownPlayField.add(pane, col, row + i);
                     }
             }
+            if (countKreuzer == 0 && countZerstoerer == 0 && countUBoot == 0 && countSchlachtschiff == 0) {
+                enemyField.setDisable(false);
+                finished.setDisable(false);
+            }
             ownPlayField.setGridLinesVisible(true);
             Schiff schiff = new Schiff(type, placedt);
             schiff.setShip(positions);
@@ -236,6 +244,7 @@ public class Controller_Playfield {
     }
 
     public void finishedPressed() throws IOException {
+        middleMan.setPlayer("Player2");
         middleMan.showWhiteScreen();
     }
 }

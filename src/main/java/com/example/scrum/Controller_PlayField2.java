@@ -44,17 +44,10 @@ public class Controller_PlayField2 {
 
     Spieler spieler = new Spieler();
 
-    public static int a = 0;
-
-
     int countUBoot = 4;
     int countZerstoerer = 3;
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
-    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("WhiteScreen.fxml"));
-    Parent root1 = fxmlLoader.load(Objects.requireNonNull(getClass().getResource("Whitescreen.fxml")).openStream());
-    Scene scene = new Scene(root1);
-    static Stage stage;
     MiddleMan middleMan = MiddleMan.getInstance();
 
 
@@ -62,17 +55,14 @@ public class Controller_PlayField2 {
     }
 
     public void finishedPressed( ) throws IOException {
+        middleMan.setPlayer("Player1");
         middleMan.showWhiteScreen();
     }
 
     public void initialize() {
-        GridPane gridPane = new GridPane();
-        int player = 1;
-        if (player == 1) {
-            gridPane = ownPlayField;
-        } else if (player == 2) {
-            gridPane = enemyField;
-        }
+        enemyField.setDisable(true);
+        finished.setDisable(true);
+        middleMan.setPlayer("Player2");
 
         LandPL1.setText(spieler.getLand1());
         LandPL2.setText(spieler.getLand2());
@@ -192,10 +182,14 @@ public class Controller_PlayField2 {
                         ownPlayField.add(pane, col, row + i);
                     }
             }
+            if (countKreuzer == 0 && countZerstoerer == 0 && countUBoot == 0 && countSchlachtschiff == 0) {
+                enemyField.setDisable(false);
+                finished.setDisable(false);
+            }
             ownPlayField.setGridLinesVisible(true);
-            Schiff schiff = new Schiff(type, placedt);
-            schiff.setShip(positions);
-            spielfeld.setShip(schiff);
+            Schiff2 schiff = new Schiff2(type, placedt);
+            schiff.setShip2(positions);
+            spielfeld.setShip2(schiff);
             System.out.println(shipRotation.getValue() + shipType.getValue() + shipX.getText() + shipY.getText());
         } else {
             System.out.println("nicht möglich");

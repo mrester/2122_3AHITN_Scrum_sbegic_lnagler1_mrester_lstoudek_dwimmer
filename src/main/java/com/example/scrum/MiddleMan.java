@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Objects;
 
 
@@ -20,6 +21,9 @@ public class MiddleMan {
     public static final MiddleMan INSTANCE;
 
     private int[][] feld = new int[15][15];
+    private int[][] feld2 = new int[15][15];
+
+    String player;
 
     static {
         try {
@@ -54,10 +58,6 @@ public class MiddleMan {
             stage.toFront();
         }
         System.out.println("I kenn des problem");
-    }
-
-    public Stage getStage() {
-        return stage;
     }
 
     /**
@@ -116,4 +116,20 @@ public class MiddleMan {
     public void setFeld(int[][] feld) {
         this.feld = feld;
     }
+
+    public int[][] getFeld2() {
+        return feld2;
+    }
+
+    public void setFeld2(int[][] feld2) {
+        this.feld2 = feld2;
+    }
+
+    public void setPlayer(String player){
+        this.player = player;
+    }
+    public String getPlayer(){
+        return player;
+    }
+
 }

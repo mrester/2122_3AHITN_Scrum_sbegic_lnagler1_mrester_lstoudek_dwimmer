@@ -42,6 +42,7 @@ public class Shipplacement {
     int countKreuzer = 2;
     int countSchlachtschiff = 1;
     int id = 0;
+    MiddleMan middleMan = MiddleMan.getInstance();
 
     @FXML
     protected void onHelloButtonClick() {

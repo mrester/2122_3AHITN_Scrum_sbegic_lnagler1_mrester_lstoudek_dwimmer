@@ -3,7 +3,7 @@ package com.example.scrum;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Schiff {
+public class Schiff2 {
 
     public Position[] posarr;
     private int avtreffer = 2;
@@ -26,8 +26,9 @@ public class Schiff {
      * 1 - 4. placed
      */
     public int id = 1;
+    static int counter = 0;
 
-    Schiff(int schifftype, int placed) {
+    Schiff2(int schifftype, int placed) {
         this.id = (schifftype * 10) + placed;
         switch (schifftype) {
             case 2:
@@ -50,9 +51,13 @@ public class Schiff {
 
     public int hit(Position position) {
         int rv = 0;
-        if (Objects.equals(middleMan.getPlayer(), "Player2")) {
+        System.out.println(position);
+        System.out.println("I bin in da methode hit");
+        if (Objects.equals(middleMan.getPlayer(), "Player1")) {
             for (int i = 0; i < posarr.length; i++) {
+                System.out.println("I bin da Player 1 ");
                 if (posarr[i].getCol() == position.getCol() && posarr[i].getRow() == position.getRow()) {
+                    System.out.println("I bin troffen worden");
                     rv = 1;
                     decTreffer();
                     if (avtreffer == 0) {
@@ -65,9 +70,10 @@ public class Schiff {
         return rv;
     }
 
-    public void setShip(Position[] positions) {
-        if (Objects.equals(middleMan.getPlayer(), "Player1")) {
+    public void setShip2(Position[] positions) {
+        if (Objects.equals(middleMan.getPlayer(), "Player2")) {
             posarr = positions;
+            System.out.println(Arrays.toString(positions));
         }
 
     }
