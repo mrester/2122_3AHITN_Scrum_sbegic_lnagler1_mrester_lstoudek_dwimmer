@@ -125,6 +125,7 @@ public class Controller_Menue {
 
             s1 = new Spieler(name1, land1);
             logs.ProssesPlayerInfo(s1.name, land1);
+            middleMan.setPlayer(s1.name);
             s2 = new Spieler(name2, land2);
             logs.ProssesPlayerInfo(s2.name, land2);
         }

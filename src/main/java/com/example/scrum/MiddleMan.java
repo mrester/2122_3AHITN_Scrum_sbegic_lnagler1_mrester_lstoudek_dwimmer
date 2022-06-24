@@ -23,6 +23,7 @@ public class MiddleMan {
     private int[][] feld = new int[15][15];
     private int[][] feld2 = new int[15][15];
 
+
     String player;
 
     static {
@@ -58,6 +59,10 @@ public class MiddleMan {
             stage.toFront();
         }
         System.out.println("I kenn des problem");
+    }
+
+    public Stage getStage() {
+        return stage;
     }
 
     /**
@@ -131,5 +136,7 @@ public class MiddleMan {
     public String getPlayer(){
         return player;
     }
+
+
 
 }
