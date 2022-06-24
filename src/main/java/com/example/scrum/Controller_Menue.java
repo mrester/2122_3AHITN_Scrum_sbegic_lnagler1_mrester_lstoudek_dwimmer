@@ -76,7 +76,7 @@ public class Controller_Menue {
 
         String name2 = eingabe2.getText();
         String land2 = String.valueOf(LaChoiceBox2.getValue());
-        Pattern pattern = Pattern.compile("[^A-z]");
+        Pattern pattern = Pattern.compile("\\W");
         Matcher m1 = pattern.matcher(name1);
         Matcher m2 = pattern.matcher(name2);
         boolean pat1 = m1.find();
