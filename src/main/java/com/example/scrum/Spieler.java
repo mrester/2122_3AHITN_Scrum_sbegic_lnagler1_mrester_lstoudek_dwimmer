@@ -1,11 +1,24 @@
 package com.example.scrum;
 
+/** Author: sbegic
+ * Spieler Klasse zum Speichern des Namens und Landes
+ * @name speichert den Spieler namen
+ * @land für eigentlichen Nutzen der Land Klasse gedacht. Siehe Land.java
+ * @count fürs hochzählen um 2 Länder Speichern zu können.
+ * @land1 speicher das Land des ersten Spielers.
+ * @land2 speicher das Land des zweiten Spielers.
+ * Spieler() leerer Konstruktor
+ * Spieler(String name, String land) Konstruktor.
+ * getLand1() gibt das erste Land zurück.
+ * getLand2() gibt das zweite Land zurück.
+ *
+ */
 public class Spieler {
-    String name;
-    Land land;
+    public String name;
+    public Land land;
     static int count = 1;
-    static String land1;
-    static String land2;
+    private static String land1;
+    private static String land2;
 
     public Spieler() {
     }
@@ -27,10 +40,5 @@ public class Spieler {
     public String getLand2() {
         return land2;
     }
-
-    public String getName() {
-        return name;
-    }
-
 
 }
