@@ -23,6 +23,27 @@ import java.util.regex.Pattern;
 
 //import static com.sun.tools.javac.resources.CompilerProperties.Warnings.Warning;
 
+/** Authoren: sbegic; wimmer; rester
+ * Controller_Menue: Die Controller Klasse für die Steuerung und durchsetzung der Menue.fxml
+ * @eingabe1 Textfeld für den Namen des ersten Spieler.
+ * @eingabe2 Textfeld für den Namen des zweiten Spieler.
+ * @LaChoiceBox1 ChoiceBox für die Auswahl des Landes des ersten Spielers.
+ * @LaChoiceBox2 ChoiceBox für die Auswahl des Landes des zweiten Spielers.
+ * @confirm Button der die Klasse pressed() aufruft.
+ * @exitBut zum schließen des Fensters.
+ * @s1 Spieler 1 mit Spieler Klasse.
+ * @s2 Spieler 2 mit Spieler Klasse.
+ * @logs für den Informations Output. (Hit, Missed, Destroyed)
+ * initialize() Füllt die ChoiceBoxen mit der Länder Auswahlen.
+ * pressed() Zwischenspeichert in eigene String Variablend die Spieler Namen
+   und Länder. Pattern wird erstellt um die Eingabe zu überprüfen.
+ * Die if() überprüft auf Gleichheit der Namen, Leere Namen,
+   Gleichheit der Länder, null(leere) Länder, regex von den Namen.
+   Falls eines Davon true liefert wird ein fehler Fenster geöffnet.
+   Dies wird solange gemacht bis die Eingaben alle erfolgreich waren.
+   Bei Erfolg werden Die SPieler mit Namen und Länder Gesetzt.
+ * exitButPressed() Schließt das Fenster und Beendet somit das Programm.
+ */
 public class Controller_Menue {
     @FXML
     //Spieler 1
