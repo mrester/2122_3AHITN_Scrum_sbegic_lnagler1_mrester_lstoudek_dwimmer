@@ -142,7 +142,7 @@ public class Controller_PlayField2 {
                     shipsOver = false;
                 }
         }
-
+        positions[0] = new Position(col, row);
 
         if (spielfeld.checkposition(positions, shipRotation.getValue()) && shipsOver) {
             switch (shipRotation.getValue()) {

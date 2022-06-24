@@ -156,12 +156,11 @@ public class Controller_Playfield {
                     placedt = countKreuzer;
                     type = 3;
                     log.setShipType(2);
-                }
                     positions[0] = new Position(col, row);
                     if (spielfeld.checkposition(positions, shipRotation.getValue())) {
                         countKreuzer--;
                     }
-                 else {
+                } else {
                     shipsOver = false;
                 }
                 break;
@@ -175,8 +174,8 @@ public class Controller_Playfield {
                         countSchlachtschiff--;
                     }
 
-                }else {
-                log.setShipType(3);
+                } else {
+                    log.setShipType(3);
                     shipsOver = false;
                 }
         }
@@ -220,6 +219,7 @@ public class Controller_Playfield {
             if (countKreuzer == 0 && countZerstoerer == 0 && countUBoot == 0 && countSchlachtschiff == 0) {
                 enemyField.setDisable(false);
                 finished.setDisable(false);
+                butt.setDisable(true);
             }
             ownPlayField.setGridLinesVisible(true);
             Schiff schiff = new Schiff(type, placedt);
@@ -227,7 +227,7 @@ public class Controller_Playfield {
             spielfeld.setShip(schiff);
 
             try {
-                log.shipInfo(shipRotation.getValue(),shipType.getValue(),shipX.getText(), shipY.getText());
+                log.shipInfo(shipRotation.getValue(), shipType.getValue(), shipX.getText(), shipY.getText());
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
