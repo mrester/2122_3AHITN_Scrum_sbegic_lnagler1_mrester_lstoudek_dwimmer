@@ -4,3 +4,7 @@ Spieler erstellen. Klassen erstellt. Starten möglich
 Land Klassen. Spieler Klasse erweitert. Begonnen mit Menü
 ## 20.05
 Fertigstellung des Spieler menüs.
+
+## 23.06
+
+## 24.06
